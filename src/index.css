@@ -9,3 +9,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#ubicacion {
+    scroll-margin-top: 8vh;
+}
+@media (min-width: 640px) {
+    #ubicacion {
+        scroll-margin-top: 12vh;
+    }
+}

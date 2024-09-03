@@ -1,4 +1,3 @@
-import "./App.css";
 import Nav from "./components/Nav/Nav";
 import Carrusel from "./components/Carrusel/Carrusel";
 import LocationSection from "./sections/LocationSection";

@@ -10,16 +10,15 @@ export default function LocationSection() {
     const localizedContent = useLocalizedContent();
     const { ubicacion } = localizedContent
     return (
-        <div className="relative w-full mx-auto">
-            <div className='relative'>
-
+        <section id="ubicacion" className="relative w-full h-[86vh] mx-auto">
+            <div className='flex relative h-[70vh] w-full'>
                 <LazyImage
                     src={localizacion}
                     alt="Vista aérea de un hotel cerca de la playa"
-                    className="w-full h-auto"
+                    className="object-cover w-full h-full"
                 />
             </div>
-            <div className='flex sm:flex-row flex-col items-center ml-4 mt-4 bg-blanco py-4 justify-start   sm:justify-around relative'>
+            <div className='flex sm:flex-row flex-col items-center ml-4 mt-4 bg-blanco py-4 justify-start   sm:justify-around relative h-[16vh]'>
 
                 <div className="flex items-start relative mx-4">
                     <div className="absolute -top-12 bg-celeste text-blanco py-2 px-5 rounded-lg text-sm font-semibold">
@@ -42,6 +41,6 @@ export default function LocationSection() {
                     <span className='ml-3 mr-1 text-celeste font-bold flex'><LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-[0.1rem]" />José Ignacio:</span> 87 km
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

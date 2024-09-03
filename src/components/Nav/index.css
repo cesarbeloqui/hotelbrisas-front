@@ -129,7 +129,7 @@
 
 
     .logo {
-        height: 7vw;
+        height: 14vh;
         width: calc(14.317vw);
         padding: .5vw;
         animation: keyLogoDesktop 3s ease-in-out;

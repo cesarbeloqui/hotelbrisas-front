@@ -7,7 +7,6 @@ import { selectLanguage, setLanguage } from "@/redux/languageSlice";
 import { useSelector, useDispatch } from "react-redux";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
 
-
 // Lista de idiomas disponibles
 const languages = [
   { code: "es", alt: "ES" },
@@ -38,10 +37,7 @@ const LanguageSelector = () => {
   );
 }
 
-
-
-
-const EnlaceNav = ({ href, children, isActive }) => {
+const EnlaceNav = ({ href, children, isActive, onClick }) => {
   return (
     <a
       href={href}
@@ -49,6 +45,7 @@ const EnlaceNav = ({ href, children, isActive }) => {
         items text-nowrap text-xl transition relative group
         ${isActive ? "font-semibold" : ""}
       `}
+      onClick={onClick}
     >
       <span className="block group-hover:invisible">
         {children}
@@ -78,17 +75,22 @@ const EnlaceNav = ({ href, children, isActive }) => {
         />
       </span>
     </a>
-  )
+  );
 }
+
 export default function NavegacionHotel() {
   const localizedContent = useLocalizedContent();
-  const { sections } = localizedContent
-  console.log(sections)
+  const { sections } = localizedContent;
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [seccionActiva, setSeccionActiva] = useState("");
 
   const toggleMenu = () => {
     setMenuAbierto(!menuAbierto);
+  };
+
+  const handleMenuItemClick = () => {
+    // Cerrar el menú cuando se haga clic en un enlace del menú móvil
+    setMenuAbierto(false);
   };
 
   useEffect(() => {
@@ -111,15 +113,17 @@ export default function NavegacionHotel() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [sections]);
 
   return (
     <nav className="w-full nav px-4 p-0 fixed top-0 left-0 z-40">
       <div className="container mx-auto">
         <div className="flex relative justify-between items-center ">
-          <div className="logo">
-            <SVG svg={logoBlanco} className="logoSVG" />
-          </div>
+          <a href="/#" onClick={handleMenuItemClick}>
+            <div className="logo">
+              <SVG svg={logoBlanco} className="logoSVG" />
+            </div>
+          </a>
           <div className="hidden lg:flex space-x-6">
             {sections.map((section) => (
               <EnlaceNav
@@ -144,34 +148,20 @@ export default function NavegacionHotel() {
         {menuAbierto && (
           <div className="lg:hidden mt-4">
             <div className="flex flex-col space-y-2">
-              <EnlaceNav
-                href="#ubicacion"
-                isActive={seccionActiva === "ubicacion"}
-              >
-                Ubicación
-              </EnlaceNav>
-              <EnlaceNav href="#suites" isActive={seccionActiva === "suites"}>
-                Suites
-              </EnlaceNav>
-              <EnlaceNav
-                href="#servicios"
-                isActive={seccionActiva === "servicios"}
-              >
-                Servicios
-              </EnlaceNav>
-              <EnlaceNav href="#galeria" isActive={seccionActiva === "galeria"}>
-                Galería
-              </EnlaceNav>
-              <EnlaceNav
-                href="#historia"
-                isActive={seccionActiva === "historia"}
-              >
-                Nuestra Historia
-              </EnlaceNav>
+              {sections.map((section) => (
+                <EnlaceNav
+                  key={section.id}
+                  href={section.href}
+                  isActive={seccionActiva === section.href.substring(1)}
+                  onClick={handleMenuItemClick} // Añadir la función de clic aquí
+                >
+                  {section.name}
+                </EnlaceNav>
+              ))}
             </div>
             <div className="mt-4 flex flex-col space-y-2">
               <button className="bg-celeste text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition-colors">
-                RESERVAS
+                {localizedContent.reservas}
               </button>
               <LanguageSelector />
             </div>
