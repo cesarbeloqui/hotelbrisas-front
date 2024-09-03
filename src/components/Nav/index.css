@@ -1,0 +1,128 @@
+@keyframes keyLogo {
+    from {
+        height: 10vw;
+        width: calc(24.317vw- 1vw);
+        padding: 1vw;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(56, 106, 163, 1) 40%);
+    }
+
+    to {
+        height: 7vw;
+        width: 14.317vw;
+        padding: 0vw;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@keyframes keyLogoSVG {
+    from {
+        top: calc(1vw);
+        width: calc(18.238vw- 1vw);
+        height: auto;
+        fill: #FFFFFF;
+        animation: keyLogoSVG;
+    }
+
+    to {
+        top: calc(1.2vw);
+        left: 15%;
+        width: calc(10vw);
+        height: auto;
+        fill: rgba(56, 106, 163, 1);
+        animation: keyLogoSVG;
+    }
+}
+
+@keyframes keyItems {
+    from {
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    to {
+        color: black;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes keyNav {
+    from {
+        background-color: #ffffff00;
+        padding-bottom: 1rem;
+    }
+
+    to {
+        color: rgb(255, 255, 255);
+        padding-bottom: 0;
+    }
+}
+
+@keyframes keySelect {
+    from {
+        border: none;
+    }
+
+    to {
+        border-color: rgb(56 106 163);
+    }
+}
+
+
+
+
+.logo {
+    display: flex;
+    position: relative;
+    height: 7vw;
+    width: 14.317vw;
+    padding: 0vw;
+    align-items: center;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    animation: keyLogo;
+}
+
+.logoSVG {
+    position: absolute;
+    top: calc(1.2vw);
+    left: 15%;
+    width: calc(10vw);
+    height: auto;
+    fill: rgba(56, 106, 163, 1);
+    animation: keyLogoSVG;
+}
+
+.items {
+    color: #000000;
+    animation: keyItems;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.nav {
+    background-color: #FFFFFF;
+    padding-bottom: 0;
+    animation: keyNav;
+}
+
+.buttonReservas {
+    border: 1px solid #FFFFFF;
+
+    &:hover {
+        border: 1px solid rgba(56, 106, 163, 1);
+    }
+}
+
+.select {
+    border-color: rgb(56 106 163);
+    animation: keySelect;
+}
+
+
+
+.logo,
+.logoSVG,
+.items,
+.nav {
+    animation-timeline: scroll();
+    animation-range: 0 150px;
+}
