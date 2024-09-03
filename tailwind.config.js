@@ -61,7 +61,9 @@ export default {
         blanco: "#FFFFFF",
         negro: "#000000",
         beige: "#E6DDCF",
-        gris: "#3C3C3B"
+        gris: "#3C3C3B",
+        hab: "#575756"
+
       },
       keyframes: {
         "accordion-down": {

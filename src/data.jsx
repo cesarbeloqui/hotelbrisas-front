@@ -23,6 +23,9 @@ export default {
       title: "Ubicación",
       lead: "A 100 M DE LA PLAYA",
       direccion: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguay"
+    },
+    habitaciones: {
+      title: "Habitaciones & Suites", subtitle: "todas las habitaciones brisas son amplias y luminosas, cada una cuenta con un espacio exterior privado, haciendo brisas un destino cómodo."
     }
   },
   en: {
@@ -44,6 +47,9 @@ export default {
       title: "Location",
       lead: "A 100 M FROM THE BEACH",
       direccion: "Santa Teresa s/n Corner Laguna Merín, 27004 La Pedrera, Uruguay"
+    },
+    habitaciones: {
+      title: "Habitaciones & Suites", subtitle: "all brisas small rooms are spacious and bright, each with a private exterior space, making brisas a comfortable destination."
     }
   },
   br: {
@@ -65,7 +71,11 @@ export default {
       title: "Localização",
       lead: "A 100 M DA PRACA",
       direccion: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguai"
+    },
+    habitaciones: {
+      title: "Habitaciones & Suítes", subtitle: "todas as suítes brisas são amplias e luminosas, cada uma contém um espaço exterior privado, fazendo brisas um destino confortável."
     }
+
   }
 
 }

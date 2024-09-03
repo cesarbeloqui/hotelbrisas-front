@@ -18,10 +18,10 @@ export default function LocationSection() {
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className='flex sm:flex-row flex-col items-center ml-4 mt-4 bg-blanco py-4 justify-start   sm:justify-around relative h-[16vh]'>
+            <div className='flex sm:flex-row flex-col items-center ml-4 mt-4 bg-blanco py-4 justify-start items-start  sm:justify-around relative h-[16vh]'>
 
                 <div className="flex items-start relative mx-4">
-                    <div className="absolute -top-12 bg-celeste text-blanco py-2 px-5 rounded-lg text-sm font-semibold">
+                    <div className="absolute -top-20 bg-celeste text-blanco py-2 px-5 rounded-lg text-sm font-semibold">
                         {ubicacion.lead}
                     </div>
                     <LazyImage src={iconLocalizacion} className="text-celeste mr-2 flex-shrink-0 h-16" />
@@ -33,13 +33,26 @@ export default function LocationSection() {
                     </div>
                 </div>
 
-                <div className="mt-4 flex sm:justify-between text-sm text-gray-500">
-                    <span className='mr-3 flex'><LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-[0.1rem]" /><span className='mr-1 text-celeste font-bold'>
-                        Cabo Polonio:
+                <div className="mt-4 flex relative sm:justify-between items-start text-sm text-gray-500 -top-8">
+                    <span className='mr-3 flex items-start'>
+                        <LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-0" />
+                        <span className='mr-1 text-celeste font-bold'>
+                            Cabo Polonio:
+                        </span>
+                        39 km
                     </span>
-                        39 km</span> |
-                    <span className='ml-3 mr-1 text-celeste font-bold flex'><LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-[0.1rem]" />José Ignacio:</span> 87 km
+                    <span className='mx-3 text-celeste font-bold'>
+                        |
+                    </span>
+                    <span className='ml-3 flex items-start'>
+                        <LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-0" />
+                        <span className='text-celeste font-bold'>
+                            José Ignacio:
+                        </span>
+                        87 km
+                    </span>
                 </div>
+
             </div>
         </section>
     );
