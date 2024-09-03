@@ -9,9 +9,9 @@ export default function HabitacionesYSuites() {
     const { habitaciones } = localizedContent
     const { title, subtitle } = habitaciones
     return (
-        <section className="relative py-32 ">
-            <div className="absolute -top-[10vh] inset-0 z-0">
-                <SVG svg={fondoHabitaciones} className="h-auto w-[100vw]" />
+        <section className="relative py-14 sm:py-32 ">
+            <div className="absolute sm:-top-[10vh] inset-0 z-0">
+                <SVG svg={fondoHabitaciones} className="w-[200vw] sm:h-auto sm:w-[100vw]" />
             </div>
             <div className="relative z-10 container mx-auto px-4 text-center">
                 <h2 className="text-4xl font-cutive  text-celeste mb-4">

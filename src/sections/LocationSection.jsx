@@ -33,7 +33,7 @@ export default function LocationSection() {
                     </div>
                 </div>
 
-                <div className="mt-4 flex relative sm:justify-between items-start text-sm text-gray-500 -top-8">
+                <div className="mt-4 flex relative sm:justify-between items-start text-sm text-gray-500 sm:-top-8">
                     <span className='mr-3 flex items-start'>
                         <LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-0" />
                         <span className='mr-1 text-celeste font-bold'>
