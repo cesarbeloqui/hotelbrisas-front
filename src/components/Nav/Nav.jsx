@@ -3,6 +3,43 @@ import { Menu, X } from "lucide-react";
 import SVG from "../SVG";
 import { logoBlanco, subLine } from "../../media/media";
 import "./index.css";
+import { selectLanguage, setLanguage } from "@/redux/languageSlice";
+import { useSelector, useDispatch } from "react-redux";
+import useLocalizedContent from "@/hooks/useLocalizedContent";
+
+
+// Lista de idiomas disponibles
+const languages = [
+  { code: "es", alt: "ES" },
+  { code: "en", alt: "EN" },
+  { code: "br", alt: "POR" },
+];
+
+const LanguageSelector = () => {
+  const dispatch = useDispatch();
+  const selectedLanguage = useSelector(selectLanguage);
+
+  const handleChange = (event) => {
+    dispatch(setLanguage(event.target.value));
+  };
+
+  return (
+    <select
+      className="bg-blanco text-celeste rounded-lg px-2 py-1 border-2 select"
+      value={selectedLanguage}
+      onChange={handleChange}
+    >
+      {languages.map((lang) => (
+        <option key={lang.code} value={lang.code}>
+          {lang.alt}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+
+
 
 const EnlaceNav = ({ href, children, isActive }) => {
   return (
@@ -44,6 +81,9 @@ const EnlaceNav = ({ href, children, isActive }) => {
   )
 }
 export default function NavegacionHotel() {
+  const localizedContent = useLocalizedContent();
+  const { sections } = localizedContent
+  console.log(sections)
   const [menuAbierto, setMenuAbierto] = useState(false);
   const [seccionActiva, setSeccionActiva] = useState("");
 
@@ -53,21 +93,14 @@ export default function NavegacionHotel() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = [
-        "ubicacion",
-        "suites",
-        "servicios",
-        "galeria",
-        "historia",
-      ];
       let current = "";
 
       for (let section of sections) {
-        const element = document.getElementById(section);
+        const element = document.querySelector(section.href);
         if (element) {
           const rect = element.getBoundingClientRect();
           if (rect.top <= 150 && rect.bottom >= 150) {
-            current = section;
+            current = section.href;
             break;
           }
         }
@@ -88,36 +121,21 @@ export default function NavegacionHotel() {
             <SVG svg={logoBlanco} className="logoSVG" />
           </div>
           <div className="hidden lg:flex space-x-6">
-            <EnlaceNav
-              href="#ubicacion"
-              isActive={seccionActiva === "ubicacion"}
-            >
-              Ubicación
-            </EnlaceNav>
-            <EnlaceNav href="#suites" isActive={seccionActiva === "suites"}>
-              Suites
-            </EnlaceNav>
-            <EnlaceNav
-              href="#servicios"
-              isActive={seccionActiva === "servicios"}
-            >
-              Servicios
-            </EnlaceNav>
-            <EnlaceNav href="#galeria" isActive={seccionActiva === "galeria"}>
-              Galería
-            </EnlaceNav>
-            <EnlaceNav href="#historia" isActive={seccionActiva === "historia"}>
-              Nuestra Historia
-            </EnlaceNav>
+            {sections.map((section) => (
+              <EnlaceNav
+                key={section.id}
+                href={section.href}
+                isActive={seccionActiva === section.href.substring(1)}
+              >
+                {section.name}
+              </EnlaceNav>
+            ))}
           </div>
           <div className="hidden lg:flex items-center space-x-4">
             <button className="font-cutive bg-celeste text-white buttonReservas px-4 pb-1 pt-2 rounded-full hover:bg-white hover:text-celeste transition-colors">
-              RESERVAS
+              {localizedContent.reservas}
             </button>
-            <select className="bg-blanco text-celeste rounded-lg px-2 py-1 border-2 select">
-              <option value="es">ES</option>
-              <option value="en">EN</option>
-            </select>
+            <LanguageSelector />
           </div>
           <button className="lg:hidden text-" onClick={toggleMenu}>
             {menuAbierto ? <X size={24} /> : <Menu size={24} />}
@@ -155,10 +173,7 @@ export default function NavegacionHotel() {
               <button className="bg-celeste text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition-colors">
                 RESERVAS
               </button>
-              <select className="bg-blanco text-celeste border-none rounded-lg px-2 py-1">
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-              </select>
+              <LanguageSelector />
             </div>
           </div>
         )}

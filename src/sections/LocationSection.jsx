@@ -4,8 +4,11 @@ import LazyImage from '@/components/LazyImage/LazyImage';
 import localizacion from "@/assets/localizacion.png"
 import iconLocalizacion from "@/assets/iconLocalizacion.png"
 import iconLocalizacionChico from "@/assets/iconLocalizacionChico.png"
+import useLocalizedContent from '@/hooks/useLocalizedContent';
 
 export default function LocationSection() {
+    const localizedContent = useLocalizedContent();
+    const { ubicacion } = localizedContent
     return (
         <div className="relative w-full mx-auto">
             <div className='relative'>
@@ -20,13 +23,13 @@ export default function LocationSection() {
 
                 <div className="flex items-start relative mx-4">
                     <div className="absolute -top-12 bg-celeste text-blanco py-2 px-5 rounded-lg text-sm font-semibold">
-                        A 100 M DE LA PLAYA
+                        {ubicacion.lead}
                     </div>
                     <LazyImage src={iconLocalizacion} className="text-celeste mr-2 flex-shrink-0 h-16" />
                     <div>
-                        <h2 className="font-cutive text-xl font-medium text-celeste">Ubicación</h2>
+                        <h2 className="font-cutive text-xl font-medium text-celeste">{ubicacion.title}</h2>
                         <p className="text-celeste sm:w-[24vw]">
-                            Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguay
+                            {ubicacion.direccion}
                         </p>
                     </div>
                 </div>
