@@ -1,3 +1,24 @@
+import image1 from "@mastersuites/1.jpeg";
+import image2 from "@mastersuites/2.jpeg";
+import image3 from "@mastersuites/3.jpeg";
+import image4 from "@mastersuites/4.jpeg";
+import image5 from "@mastersuites/5.jpeg";
+import image6 from "@mastersuites/6.jpeg";
+import image7 from "@mastersuites/7.jpeg";
+
+export const CarruselImages1 = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7
+];
+
+
+
+
 const slides = [
   { id: 1, content: <div key="1" className="text- bg-blue-400 h-[100vh] w-full">Slide 1</div> },
   { id: 2, content: <div key="2" className="text- bg-blue-400 h-[100vh] w-full">Slide 2</div> },
@@ -26,6 +47,12 @@ export default {
     },
     habitaciones: {
       title: "Habitaciones & Suites", subtitle: "todas las habitaciones brisas son amplias y luminosas, cada una cuenta con un espacio exterior privado, haciendo brisas un destino cómodo."
+    },
+    masterSuites: {
+      title: "Master Suites",
+      content: "Las suites MASTER son únicas. Ubicadas en las esquinas de la planta alta las dos comandan vistas increíbles de la playa desde sus amplios ventanales y terrazas.",
+      subcontent: "Máster East es la más cercana al mar, Máster West es la más amplia. Tomamos en consideración vuestra preferencia pero no podemos siempre garantizar cuál de las dos Máster será asignada, dependerá de disponibilidad y duración de la estadía.",
+      button: "Master Suites en imágenes"
     }
   },
   en: {
@@ -50,6 +77,12 @@ export default {
     },
     habitaciones: {
       title: "Habitaciones & Suites", subtitle: "all brisas small rooms are spacious and bright, each with a private exterior space, making brisas a comfortable destination."
+    },
+    masterSuites: {
+      title: "Master Suites",
+      content: "The MASTER suites are unique. Located on the corners of the upper floor, both command incredible views of the beach from their large windows and terraces.",
+      subcontent: "Master East is the closest to the sea, Master West is the most spacious. We take your preference into consideration, but we cannot always guarantee which of the two Masters will be assigned; it will depend on availability and the length of stay.",
+      button: "Master Suites in Pictures"
     }
   },
   br: {
@@ -74,7 +107,13 @@ export default {
     },
     habitaciones: {
       title: "Habitaciones & Suítes", subtitle: "todas as suítes brisas são amplias e luminosas, cada uma contém um espaço exterior privado, fazendo brisas um destino confortável."
-    }
+    },
+    masterSuites: {
+      title: "Master Suites",
+      content: "As suítes MASTER são únicas. Localizadas nos cantos do andar superior, ambas oferecem vistas incríveis da praia a partir de suas amplas janelas e terraços.",
+      subcontent: "A Master East é a mais próxima do mar, a Master West é a mais espaçosa. Levamos em consideração a sua preferência, mas não podemos garantir sempre qual das duas Masters será designada; dependerá da disponibilidade e da duração da estadia.",
+      button: "Master Suites em imagens"
+    },
 
   }
 

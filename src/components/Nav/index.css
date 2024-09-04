@@ -126,10 +126,8 @@
 
 /* Cambiar a la animación de escritorio en pantallas grandes */
 @media (min-width: 640px) {
-
-
     .logo {
-        height: 14vh;
+        height: 6rem;
         width: calc(14.317vw);
         padding: .5vw;
         animation: keyLogoDesktop 3s ease-in-out;

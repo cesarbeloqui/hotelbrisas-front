@@ -61,6 +61,7 @@ export default {
         blanco: "#FFFFFF",
         negro: "#000000",
         beige: "#E6DDCF",
+        darkceleste: "#B0C6DE",
         gris: "#3C3C3B",
         hab: "#575756"
 
