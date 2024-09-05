@@ -44,7 +44,7 @@ function Servicios() {
 
         return () => window.removeEventListener('resize', updateHeight);
     }, []);
-
+    console.log(rightColumnHeight)
     return (
         <div className="w-full mx-auto bg-blanco overflow-hidden z-30">
             <div className="pb-6 flex flex-col md:flex-row">
@@ -60,7 +60,11 @@ function Servicios() {
                     >
                         <CarouselContent>
                             {images.map((image, index) => (
-                                <CarouselItem key={index} className="w-full" style={{ height: rightColumnHeight }}>
+                                <CarouselItem
+                                    key={index}
+                                    className={`w-full`} // Aplicar si es necesario
+                                    style={{ height: window.innerWidth >= 640 ? rightColumnHeight : '40vh' }}
+                                >
                                     <Card className="w-full h-full border-none">
                                         <CardContent className="p-0 h-full">
                                             <LazyImage
