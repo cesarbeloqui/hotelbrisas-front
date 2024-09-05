@@ -7,8 +7,8 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
-import SVG from "../SVG";
-import { arrowLeft, arrowRight } from "@/media/media";
+import ArrowLeft from "@icons/arrowLeft.svg?react";
+import ArrowRight from "@icons/arrowRight.svg?react";
 import Autoplay from "embla-carousel-autoplay";
 import image1 from "@carrusel/1.png";
 import image2 from "@carrusel/2.jpg";
@@ -81,10 +81,10 @@ export default function FullscreenCarousel() {
                 ))}
             </CarouselContent>
             <CarouselPrevious className="left-4 top-[65vh] border-none">
-                <SVG className="h-8 w-8" svg={arrowLeft} />
+                <ArrowLeft className="h-8 w-8" />
             </CarouselPrevious>
             <CarouselNext className="right-4 top-[65vh] border-none">
-                <SVG className="h-8 w-8" svg={arrowRight} />
+                <ArrowRight className="h-8 w-8" />
             </CarouselNext>
         </Carousel>
     );

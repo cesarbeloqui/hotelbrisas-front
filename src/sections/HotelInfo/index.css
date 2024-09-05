@@ -1,0 +1,75 @@
+.ribbon {
+    --f: .7rem;
+    /* Tamaño del doblez */
+    --r: 1.2rem;
+    /* Tamaño del triángulo del doblez */
+
+    position: absolute;
+    top: .5rem;
+    left: calc(-1 * var(--f));
+    padding-inline: .20em;
+    line-height: 1.8;
+    background: #386AA3;
+    border-bottom: calc(var(--f)) solid #fff5;
+    border-right: var(--r) solid #ffffff00;
+
+    clip-path: polygon(calc(100% - var(--r)) 0,
+            /* Punto superior derecho */
+            0 0,
+            /* Punto superior izquierdo */
+            0 calc(100% - var(--f)),
+            /* Punto inferior izquierdo, se mueve hacia arriba */
+            var(--f) 100%,
+            /* Punto inferior izquierdo, se mueve hacia la izquierda */
+            var(--f) calc(100% - var(--f)),
+            /* Punto inferior izquierdo, se mueve hacia arriba */
+            calc(100% - var(--r)) calc(100% - var(--f)),
+            /* Punto inferior derecho, se mueve hacia arriba */
+            100% calc(50% - var(--f) / 2)
+            /* Punto central en la derecha */
+        );
+
+    width: 6rem;
+    /* Ancho fijo */
+    height: 3rem;
+    /* Alto fijo */
+}
+
+@media (min-width: 640px) {
+    .ribbon {
+            --f: 1.2rem;
+            /* Tamaño del doblez */
+            --r: 1.2rem;
+            /* Tamaño del triángulo del doblez */
+    
+            position: absolute;
+            top: .9rem;
+            left: calc(-1 * var(--f));
+            padding-inline: .20em;
+            line-height: 1.8;
+            background: #386AA3;
+            border-bottom: calc(var(--f)) solid #fff5;
+            border-right: var(--r) solid #ffffff00;
+    
+            clip-path: polygon(calc(100% - var(--r)) 0,
+                    /* Punto superior derecho */
+                    0 0,
+                    /* Punto superior izquierdo */
+                    0 calc(100% - var(--f)),
+                    /* Punto inferior izquierdo, se mueve hacia arriba */
+                    var(--f) 100%,
+                    /* Punto inferior izquierdo, se mueve hacia la izquierda */
+                    var(--f) calc(100% - var(--f)),
+                    /* Punto inferior izquierdo, se mueve hacia arriba */
+                    calc(100% - var(--r)) calc(100% - var(--f)),
+                    /* Punto inferior derecho, se mueve hacia arriba */
+                    100% calc(50% - var(--f) / 2)
+                    /* Punto central en la derecha */
+                );
+    
+            width: 8.7rem;
+            /* Ancho fijo */
+            height: 3.8rem;
+            /* Alto fijo */
+        }
+}

@@ -2,13 +2,14 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
-
+import svgr from 'vite-plugin-svgr';
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    svgr(),
     viteStaticCopy({
       targets: [
         {
@@ -25,6 +26,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "@icons": path.resolve(__dirname, "./src/assets/icons"),
       "@servicios": path.resolve(__dirname, "./src/assets/servicios"),
       "@gardesuites": path.resolve(__dirname, "./src/assets/gardesuites"),
       "@bahiasuites": path.resolve(__dirname, "./src/assets/bahiasuites"),

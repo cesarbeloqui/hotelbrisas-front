@@ -38,13 +38,6 @@ export const CarruselImages3 = [
 
 
 
-
-const slides = [
-  { id: 1, content: <div key="1" className="text- bg-blue-400 h-[100vh] w-full">Slide 1</div> },
-  { id: 2, content: <div key="2" className="text- bg-blue-400 h-[100vh] w-full">Slide 2</div> },
-  { id: 3, content: <div key="3" className="text- bg-blue-400 h-[100vh] w-full">Slide 3</div> },
-]
-
 export default {
   es: {
     slides: [{ id: 1, content: '“¡Primer hotel con sentido del diseño en la pedrera!”', sub: 'Conde Nast Traveler Magazine.', link: 'https://www.cntraveller.com/gallery/uruguay-best-beaches-parties-resorts-south-america' },

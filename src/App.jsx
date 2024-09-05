@@ -7,6 +7,7 @@ import { CarruselImages1, CarruselImages2, CarruselImages3 } from "./data"
 import Suites from "./sections/Suites.jsx";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
 import Servicios from "./sections/Servicios"
+import HotelInfo from "./sections/HotelInfo/HotelInfo";
 
 
 
@@ -30,7 +31,9 @@ function App() {
       <Carrusel2 images={CarruselImages3} />
       <Suites contenido={gardenSuites} />
       <Header info={headers[1]} />
-      <Servicios/>
+      <Servicios />
+      <HotelInfo />
+
     </>
   );
 }
