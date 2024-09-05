@@ -1,39 +1,88 @@
+import React, { useEffect, useRef, useState } from 'react';
+import { Card, CardContent } from "@/components/ui/card";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
-import img from "@servicios/1.jpg"
+import SVG from "../components/SVG";
+import { arrowLeft2, arrowRight2 } from "@/media/media";
+import Autoplay from "embla-carousel-autoplay";
+import LazyImage from "../components/LazyImage/LazyImage";
 
-// Array de items extraído fuera del componente
-const amenidades = [
-    "Copa de Bienvenida.",
-    "Desayuno buffet.",
-    "WiFi en el hotel y las habitaciones.",
-    "A/C, caja de seguridad.",
-    "Pava eléctrica, mini-fridge, cristalería y servicio de té.",
-    'TV 43" Full HD.',
-    "Batas.",
-    "Living con estufa.",
-    "Patio / Deck en zona de piscina con reposeras y mesas.",
-    "En temporada para la playa: bolsa, toallas, sombreros y sillas de playa.",
-];
+// Import images
+import img1 from "@servicios/1.jpg";
+import img2 from "@servicios/2.jpg";
+import img3 from "@servicios/3.jpg";
+import img4 from "@servicios/4.jpg";
+import img5 from "@servicios/5.jpg";
+import img6 from "@servicios/6.jpg";
 
-export default function Servicios() {
-    const localizedContent = useLocalizedContent()
-    const { servicios } = localizedContent
-    const { items } = servicios
+const images = [img1, img2, img3, img4, img5, img6];
+
+function Servicios() {
+    const localizedContent = useLocalizedContent();
+    const { servicios } = localizedContent;
+    const { items } = servicios;
+
+    const rightColumnRef = useRef(null);
+    const [rightColumnHeight, setRightColumnHeight] = useState('auto');
+
+    useEffect(() => {
+        const updateHeight = () => {
+            if (rightColumnRef.current) {
+                const height = rightColumnRef.current.offsetHeight;
+                setRightColumnHeight(`${height}px`);
+            }
+        };
+
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+
+        return () => window.removeEventListener('resize', updateHeight);
+    }, []);
+
     return (
-        <div className="w-full  mx-auto bg-blanco overflow-hidden z-30">
+        <div className="w-full mx-auto bg-blanco overflow-hidden z-30">
             <div className="pb-6 flex flex-col md:flex-row">
-                {/* Columna izquierda con la imagen */}
+                {/* Left column with the image carousel */}
                 <div className="md:w-1/2">
-                    <img
-                        src={img}
-                        alt="Mujer disfrutando de una comida al aire libre"
-                        width={500}
-                        height={375}
-                        className="object-cover h-full w-full"
-                    />
+                    <Carousel
+                        plugins={[
+                            Autoplay({
+                                delay: 3000,
+                            }),
+                        ]}
+                        className="w-full h-full"
+                    >
+                        <CarouselContent>
+                            {images.map((image, index) => (
+                                <CarouselItem key={index} className="w-full" style={{ height: rightColumnHeight }}>
+                                    <Card className="w-full h-full border-none">
+                                        <CardContent className="p-0 h-full">
+                                            <LazyImage
+                                                src={image}
+                                                alt={`Servicio ${index + 1}`}
+                                                className="object-cover h-full w-full"
+                                            />
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="left-4 border-none">
+                            <SVG className="h-5 w-5" svg={arrowLeft2} />
+                        </CarouselPrevious>
+                        <CarouselNext className="right-4 border-none">
+                            <SVG className="h-5 w-5" svg={arrowRight2} />
+                        </CarouselNext>
+                    </Carousel>
                 </div>
-                {/* Columna derecha con la lista de amenidades */}
-                <div className="md:w-1/2 bg-beige">
+                {/* Right column with the list of amenities */}
+                <div ref={rightColumnRef} className="md:w-1/2 bg-beige">
                     <ul className="space-y-2 py-20 px-14">
                         {items.map((item, index) => (
                             <li key={index} className="flex items-start">
@@ -49,3 +98,5 @@ export default function Servicios() {
         </div>
     );
 }
+
+export default Servicios;
