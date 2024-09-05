@@ -1,4 +1,4 @@
-import Wp from "@icons/wp.svg?react";
+import Wp from "@icons/Wp.svg?react";
 
 const Whatsapp = () => {
   return (
