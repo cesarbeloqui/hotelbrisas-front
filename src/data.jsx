@@ -13,6 +13,13 @@ import image12 from "@gardesuites/1.jpg";
 import image13 from "@gardesuites/2.jpg";
 import image14 from "@gardesuites/3.jpg";
 import image15 from "@gardesuites/4.jpeg";
+import PhoneXIcon from "@icons/PhoneXIcon.svg?react";
+import UsersIcon from "@icons/UsersIcon.svg?react";
+import SmokingIcon from "@icons/SmokingIcon.svg?react";
+import CarIcon from "@icons/CarIcon.svg?react";
+import InfoIcon from "@icons/InfoIcon.svg?react";
+import CheckInIcon from "@icons/CheckInIcon.svg?react";
+import PoolIcon from "@icons/PoolIcon.svg?react";
 
 export const CarruselImages1 = [
   image1,
@@ -96,7 +103,68 @@ export default {
         "Patio / Deck en zona de piscina con reposeras y mesas.",
         "En temporada para la playa: bolsa, toallas, sombreros y sillas de playa.",
       ]
-    }
+    },
+    hotelInfo: [
+      {
+        title: "Información General",
+        items: [
+          {
+            icon: PhoneXIcon,
+            content: [
+              "Las habitaciones Brisas NO CUENTAN con teléfonos."
+            ]
+          },
+          {
+            icon: UsersIcon,
+            content: [
+              { "font-bold": "MENORES: " },
+              "Recibimos familias con menores, contáctarnos directamente para conversar opciones."
+            ]
+          },
+          {
+            icon: SmokingIcon,
+            content: [
+              { "font-bold": "NO SE PERMITE FUMAR " },
+              "en todo el predio del hotel, dentro o fuera de las habitaciones."
+            ]
+          },
+          {
+            icon: CarIcon,
+            content: [
+              { "font-bold": "ESTACIONAMIENTO: " },
+              "Contamos con 5 espacios de estacionamiento dentro del hotel, no existen cocheras asignadas, es posible estacionar alrededor del hotel."
+            ]
+          }
+        ]
+      },
+      {
+        title: "Tarifas y Horarios",
+        items: [
+          {
+            icon: InfoIcon,
+            content: [
+              { "font-bold": "IVA: " },
+              "Todos los cargos son en dólares US. Las tarifas son por noche por habitación con el desayuno incluido y no incluyen impuestos.",
+              { "text-celeste": "\nExtranjeros están exentos de impuestos, Uruguayos suman un 10% por IVA adicional." }
+            ]
+          },
+          {
+            icon: CheckInIcon,
+            content: [
+              { "font-bold": "Horarios Check-in / Check-out: " },
+              "de acuerdo a la estacionalidad."
+            ]
+          },
+          {
+            icon: PoolIcon,
+            content: [
+              { "font-bold": "Horarios de piscina: " },
+              "de acuerdo a la estacionalidad."
+            ]
+          }
+        ]
+      }
+    ]
 
   },
   en: {
@@ -165,7 +233,68 @@ export default {
         "Seasonal beach items: bag, towels, hats, and beach chairs."
       ]
 
-    }
+    },
+    hotelInfo: [
+      {
+        title: "General Information",
+        items: [
+          {
+            icon: PhoneXIcon,
+            content: [
+              "Brisas rooms DO NOT HAVE telephones."
+            ]
+          },
+          {
+            icon: UsersIcon,
+            content: [
+              { "font-bold": "CHILDREN: " },
+              "We welcome families with children. Please contact us directly to discuss options."
+            ]
+          },
+          {
+            icon: SmokingIcon,
+            content: [
+              { "font-bold": "NO SMOKING " },
+              "is allowed anywhere on the hotel premises, both inside and outside the rooms."
+            ]
+          },
+          {
+            icon: CarIcon,
+            content: [
+              { "font-bold": "PARKING: " },
+              "We have 5 parking spaces within the hotel. There are no assigned parking spots, but parking around the hotel is possible."
+            ]
+          }
+        ]
+      },
+      {
+        title: "Rates and Timings",
+        items: [
+          {
+            icon: InfoIcon,
+            content: [
+              { "font-bold": "VAT: " },
+              "All charges are in US dollars. Rates are per night per room with breakfast included and do not include taxes.",
+              { "text-celeste": "\nForeigners are exempt from taxes, while Uruguayans incur an additional 10% VAT." }
+            ]
+          },
+          {
+            icon: CheckInIcon,
+            content: [
+              { "font-bold": "Check-in / Check-out Times: " },
+              "subject to seasonality."
+            ]
+          },
+          {
+            icon: PoolIcon,
+            content: [
+              { "font-bold": "Pool Hours: " },
+              "subject to seasonality."
+            ]
+          }
+        ]
+      }
+    ],
   },
   br: {
     slides: [
@@ -232,7 +361,69 @@ export default {
         "Pátio / Deck na área da piscina com espreguiçadeiras e mesas.",
         "Em temporada para a praia: bolsa, toalhas, chapéus e cadeiras de praia."
       ]
-    }
+    },
+    hotelInfo: [
+      {
+        title: "Informações Gerais",
+        items: [
+          {
+            icon: PhoneXIcon,
+            content: [
+              "Os quartos Brisas NÃO DISPÕEM de telefones."
+            ]
+          },
+          {
+            icon: UsersIcon,
+            content: [
+              { "font-bold": "MENORIDADES: " },
+              "Recebemos famílias com menores, entre em contato diretamente para discutir opções."
+            ]
+          },
+          {
+            icon: SmokingIcon,
+            content: [
+              { "font-bold": "É PROIBIDO FUMAR " },
+              "em toda a propriedade do hotel, dentro ou fora dos quartos."
+            ]
+          },
+          {
+            icon: CarIcon,
+            content: [
+              { "font-bold": "ESTACIONAMENTO: " },
+              "Temos 5 espaços de estacionamento dentro do hotel, não há vagas designadas, é possível estacionar ao redor do hotel."
+            ]
+          }
+        ]
+      },
+      {
+        title: "Tarifas e Horários",
+        items: [
+          {
+            icon: InfoIcon,
+            content: [
+              { "font-bold": "IVA: " },
+              "Todos os encargos são em dólares dos EUA. As tarifas são por noite por quarto com café da manhã incluído e não incluem impostos.",
+              { "text-celeste": "\nEstrangeiros estão isentos de impostos, uruguaios acrescentam 10% de IVA adicional." }
+            ]
+          },
+          {
+            icon: CheckInIcon,
+            content: [
+              { "font-bold": "Horários de Check-in / Check-out: " },
+              "de acordo com a sazonalidade."
+            ]
+          },
+          {
+            icon: PoolIcon,
+            content: [
+              { "font-bold": "Horários da piscina: " },
+              "de acordo com a sazonalidade."
+            ]
+          }
+        ]
+      }
+    ],
+
 
   }
 

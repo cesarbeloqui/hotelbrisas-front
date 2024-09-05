@@ -8,6 +8,7 @@ import Suites from "./sections/Suites.jsx";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
 import Servicios from "./sections/Servicios"
 import HotelInfo from "./sections/HotelInfo/HotelInfo";
+import HotelGallery from "./sections/HotelGallery";
 
 
 
@@ -33,7 +34,7 @@ function App() {
       <Header info={headers[1]} />
       <Servicios />
       <HotelInfo />
-
+      <HotelGallery/>
     </>
   );
 }
