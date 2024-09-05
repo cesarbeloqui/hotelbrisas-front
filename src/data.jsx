@@ -18,13 +18,7 @@ import image17 from "@galeria/2.jpg";
 import image18 from "@galeria/3.jpg";
 import image19 from "@galeria/4.jpg";
 import image20 from "@galeria/5.jpg";
-import PhoneXIcon from "@icons/PhoneXIcon.svg?react";
-import UsersIcon from "@icons/UsersIcon.svg?react";
-import SmokingIcon from "@icons/SmokingIcon.svg?react";
-import CarIcon from "@icons/CarIcon.svg?react";
-import InfoIcon from "@icons/InfoIcon.svg?react";
-import CheckInIcon from "@icons/CheckInIcon.svg?react";
-import PoolIcon from "@icons/PoolIcon.svg?react";
+
 
 export const CarruselImages1 = [
   image1,
@@ -122,27 +116,27 @@ export default {
         title: "Información General",
         items: [
           {
-            icon: PhoneXIcon,
+            icon: "PhoneXIcon",
             content: [
               "Las habitaciones Brisas NO CUENTAN con teléfonos."
             ]
           },
           {
-            icon: UsersIcon,
+            icon: "UsersIcon",
             content: [
               { "font-bold": "MENORES: " },
               "Recibimos familias con menores, contáctarnos directamente para conversar opciones."
             ]
           },
           {
-            icon: SmokingIcon,
+            icon: "SmokingIcon",
             content: [
               { "font-bold": "NO SE PERMITE FUMAR " },
               "en todo el predio del hotel, dentro o fuera de las habitaciones."
             ]
           },
           {
-            icon: CarIcon,
+            icon: "CarIcon",
             content: [
               { "font-bold": "ESTACIONAMIENTO: " },
               "Contamos con 5 espacios de estacionamiento dentro del hotel, no existen cocheras asignadas, es posible estacionar alrededor del hotel."
@@ -154,7 +148,7 @@ export default {
         title: "Tarifas y Horarios",
         items: [
           {
-            icon: InfoIcon,
+            icon: "InfoIcon",
             content: [
               { "font-bold": "IVA: " },
               "Todos los cargos son en dólares US. Las tarifas son por noche por habitación con el desayuno incluido y no incluyen impuestos.",
@@ -162,14 +156,14 @@ export default {
             ]
           },
           {
-            icon: CheckInIcon,
+            icon: "CheckInIcon",
             content: [
               { "font-bold": "Horarios Check-in / Check-out: " },
               "de acuerdo a la estacionalidad."
             ]
           },
           {
-            icon: PoolIcon,
+            icon: "PoolIcon",
             content: [
               { "font-bold": "Horarios de piscina: " },
               "de acuerdo a la estacionalidad."
@@ -261,27 +255,27 @@ export default {
         title: "General Information",
         items: [
           {
-            icon: PhoneXIcon,
+            icon: "PhoneXIcon",
             content: [
               "Brisas rooms DO NOT HAVE telephones."
             ]
           },
           {
-            icon: UsersIcon,
+            icon: "UsersIcon",
             content: [
               { "font-bold": "CHILDREN: " },
               "We welcome families with children. Please contact us directly to discuss options."
             ]
           },
           {
-            icon: SmokingIcon,
+            icon: "SmokingIcon",
             content: [
               { "font-bold": "NO SMOKING " },
               "is allowed anywhere on the hotel premises, both inside and outside the rooms."
             ]
           },
           {
-            icon: CarIcon,
+            icon: "CarIcon",
             content: [
               { "font-bold": "PARKING: " },
               "We have 5 parking spaces within the hotel. There are no assigned parking spots, but parking around the hotel is possible."
@@ -293,7 +287,7 @@ export default {
         title: "Rates and Timings",
         items: [
           {
-            icon: InfoIcon,
+            icon: "InfoIcon",
             content: [
               { "font-bold": "VAT: " },
               "All charges are in US dollars. Rates are per night per room with breakfast included and do not include taxes.",
@@ -301,14 +295,14 @@ export default {
             ]
           },
           {
-            icon: CheckInIcon,
+            icon: "CheckInIcon",
             content: [
               { "font-bold": "Check-in / Check-out Times: " },
               "subject to seasonality."
             ]
           },
           {
-            icon: PoolIcon,
+            icon: "PoolIcon",
             content: [
               { "font-bold": "Pool Hours: " },
               "subject to seasonality."
@@ -411,27 +405,27 @@ export default {
         title: "Informações Gerais",
         items: [
           {
-            icon: PhoneXIcon,
+            icon: "PhoneXIcon",
             content: [
               "Os quartos Brisas NÃO DISPÕEM de telefones."
             ]
           },
           {
-            icon: UsersIcon,
+            icon: "UsersIcon",
             content: [
               { "font-bold": "MENORIDADES: " },
               "Recebemos famílias com menores, entre em contato diretamente para discutir opções."
             ]
           },
           {
-            icon: SmokingIcon,
+            icon: "SmokingIcon",
             content: [
               { "font-bold": "É PROIBIDO FUMAR " },
               "em toda a propriedade do hotel, dentro ou fora dos quartos."
             ]
           },
           {
-            icon: CarIcon,
+            icon: "CarIcon",
             content: [
               { "font-bold": "ESTACIONAMENTO: " },
               "Temos 5 espaços de estacionamento dentro do hotel, não há vagas designadas, é possível estacionar ao redor do hotel."
@@ -443,7 +437,7 @@ export default {
         title: "Tarifas e Horários",
         items: [
           {
-            icon: InfoIcon,
+            icon: "InfoIcon",
             content: [
               { "font-bold": "IVA: " },
               "Todos os encargos são em dólares dos EUA. As tarifas são por noite por quarto com café da manhã incluído e não incluem impostos.",
@@ -451,14 +445,14 @@ export default {
             ]
           },
           {
-            icon: CheckInIcon,
+            icon: "CheckInIcon",
             content: [
               { "font-bold": "Horários de Check-in / Check-out: " },
               "de acordo com a sazonalidade."
             ]
           },
           {
-            icon: PoolIcon,
+            icon: "PoolIcon",
             content: [
               { "font-bold": "Horários da piscina: " },
               "de acordo com a sazonalidade."

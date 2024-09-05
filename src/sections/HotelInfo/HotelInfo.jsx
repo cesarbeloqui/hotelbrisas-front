@@ -9,13 +9,22 @@ import PoolIcon from "@icons/PoolIcon.svg?react";
 import TextFormatter from "@/components/TextFormatter/TextFormatter";
 import "./index.css"
 import useLocalizedContent from "@/hooks/useLocalizedContent";
-
+const iconMap = {
+    PhoneXIcon,
+    UsersIcon,
+    SmokingIcon,
+    CarIcon,
+    InfoIcon,
+    CheckInIcon,
+    PoolIcon,
+};
 
 
 export default function HotelInfo() {
-    const localizedContent = useLocalizedContent()
-    const { hotelInfo } = localizedContent
-    const info = hotelInfo[0].info
+    const localizedContent = useLocalizedContent();
+    const { hotelInfo } = localizedContent;
+    const info = hotelInfo[0].info;
+
     return (
         <div className="w-full md:w-[84vw] mx-auto p-4">
             <h1 className="text-2xl md:text-3xl text-celeste font-cutive mb-4 md:mb-6">{info}</h1>
@@ -29,7 +38,7 @@ export default function HotelInfo() {
                             <CardContent className="p-4 md:p-6">
                                 <ul className="space-y-3 md:space-y-4">
                                     {card.items.map((item, itemIndex) => {
-                                        const Icon = item.icon;
+                                        const Icon = iconMap[item.icon];
                                         return (
                                             <li key={itemIndex} className="flex items-center">
                                                 <Icon className="w-8 h-8 md:w-10 md:h-10 mr-3 md:mr-5 text-celeste flex-shrink-0" />
@@ -46,5 +55,5 @@ export default function HotelInfo() {
                 ))}
             </div>
         </div>
-    )
+    );
 }
