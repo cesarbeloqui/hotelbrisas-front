@@ -15,9 +15,10 @@ import useLocalizedContent from "@/hooks/useLocalizedContent";
 export default function HotelInfo() {
     const localizedContent = useLocalizedContent()
     const { hotelInfo } = localizedContent
+    const info = hotelInfo[0].info
     return (
         <div className="w-full md:w-[84vw] mx-auto p-4">
-            <h1 className="text-2xl md:text-3xl text-celeste font-cutive mb-4 md:mb-6">A tener en cuenta:</h1>
+            <h1 className="text-2xl md:text-3xl text-celeste font-cutive mb-4 md:mb-6">{info}</h1>
             <div className="flex flex-col md:flex-row md:flex-wrap md:gap-16">
                 {hotelInfo.map((card, cardIndex) => (
                     <div key={cardIndex} className="relative flex-1 min-w-full md:min-w-[calc(50%-10rem)] flex flex-col mb-8 md:mb-0">

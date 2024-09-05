@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -44,7 +45,6 @@ function Servicios() {
 
         return () => window.removeEventListener('resize', updateHeight);
     }, []);
-    console.log(rightColumnHeight)
     return (
         <div className="w-full mx-auto bg-blanco overflow-hidden z-30">
             <div className="pb-6 flex flex-col md:flex-row">

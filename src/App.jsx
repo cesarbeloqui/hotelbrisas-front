@@ -3,12 +3,13 @@ import Carrusel from "./components/Carrusel/Carrusel";
 import LocationSection from "./sections/LocationSection";
 import Header from "./sections/Header";
 import Carrusel2 from "./components/Carrusel2/Carrusel2";
-import { CarruselImages1, CarruselImages2, CarruselImages3 } from "./data"
+import { CarruselImages1, CarruselImages2, CarruselImages3, CarruselImages4 } from "./data"
 import Suites from "./sections/Suites.jsx";
 import useLocalizedContent from "@/hooks/useLocalizedContent";
 import Servicios from "./sections/Servicios"
 import HotelInfo from "./sections/HotelInfo/HotelInfo";
 import HotelGallery from "./sections/HotelGallery";
+import Historia from "./sections/Historia";
 
 
 
@@ -35,6 +36,8 @@ function App() {
       <Servicios />
       <HotelInfo />
       <HotelGallery/>
+      <Carrusel2 images={CarruselImages4} />
+      <Historia/>
     </>
   );
 }

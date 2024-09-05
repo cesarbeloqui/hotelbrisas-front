@@ -13,6 +13,11 @@ import image12 from "@gardesuites/1.jpg";
 import image13 from "@gardesuites/2.jpg";
 import image14 from "@gardesuites/3.jpg";
 import image15 from "@gardesuites/4.jpeg";
+import image16 from "@galeria/1.jpg";
+import image17 from "@galeria/2.jpg";
+import image18 from "@galeria/3.jpg";
+import image19 from "@galeria/4.jpg";
+import image20 from "@galeria/5.jpg";
 import PhoneXIcon from "@icons/PhoneXIcon.svg?react";
 import UsersIcon from "@icons/UsersIcon.svg?react";
 import SmokingIcon from "@icons/SmokingIcon.svg?react";
@@ -41,6 +46,13 @@ export const CarruselImages3 = [
   image13,
   image14,
   image15
+];
+export const CarruselImages4 = [
+  image16,
+  image17,
+  image18,
+  image19,
+  image20
 ];
 
 
@@ -106,6 +118,7 @@ export default {
     },
     hotelInfo: [
       {
+        info: "A tener en cuenta:",
         title: "Información General",
         items: [
           {
@@ -164,7 +177,15 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    hotelGallery: {
+      title: "Galería",
+      subtitle: "Conozca más de nuestro hotel"
+    },
+    historia: {
+      title: "Nuestra Historia",
+      content: [{ "font-bold": "A este hermoso lugar de playa primero la llamaron Punta Rubia. " }, "Fueron los navegantes de la época encandilados por sus anchas playas doradas que se vislumbraban desde la lejanía, mar adentro. Esas arenas doradas se conjugaban con un verdadero balcón al mar, compuesto por formaciones rocosas de más de 60 millones de años, testimonio fundamental del desplazamiento de los continentes ya que las mismas rocas continúan en Sudáfrica. De allí su nombre definitivo: ", { "font-bold": "LA PEDRERA" }, ". Es uno de los balnearios más antiguos del Departamento, y “la joya de la Corona”, de Rocha.\n\n", "El primer amanzanamiento del balneario fue realizado por el Agrimensor Adolfo Reis, en noviembre de 1898 y le fue encargado por Román Arrarte, dueño de la enorme propiedad rural que lo abarcaba, y que posteriormente heredó Angela, una de sus doce hijos. Allí iban familias amigas a disfrutar ese auténtico balcón al océano que caracteriza al balneario desde sus orígenes. Hacia el año 1910 habían levantado sus casas unas diez familias, en su mayoría italianos y vascos. Desde entonces y hasta hoy, su aire a pueblo, la tranquilidad de sus calles de tierra, que mueren en el mar, la convierten en un lugar de mucho encanto. Visualizar desde allí los amaneceres y la luna llena reflejada en el Océano proporciona un espectáculo único. Su callecita del centro, su antigua Iglesia, cuya campana perteneció a un barco hundido en estas costas, su aire de entonces y de ahora, su cielo al atardecer, nos hace recordar aquel poema de Rafael Alberti en Marinero en Tierra: ", { "italic": '“¿Quién rompió las doradas vidrieras del crepúsculo? ¡Oh cielo descubierto, de montes, mares, vientos..”.' }, "Porque La Pedrera se incluye dentro de la Reserva de Biósfera «Bañados del Este»; y en ella podemos disfrutar de los increíbles y ricos paisajes con la más alta diversidad de flora y fauna. Cabalgatas, deportes al aire libre, campo y mucho mar, con aire de familia y tiempos idos.  Si miramos hacia el mar desde julio hasta octubre, nos sorprenderemos al ver a las ballenas Francas, en su pasaje desde el sur hacia otras latitudes. Sus excelentes playas invitan al baño y a la recreación, de toda la familia. Asimismo, nos brindan óptimas condiciones para la práctica del surf y la pesca deportiva.\n\n", { "font-bold": "En ese lugar, y mirando el mar, Doña Alfonsa, fundó en 1910 la primera Posada. " }, "Hoy, a más de 110 años, lo que fue es. Y abre nuevamente sus puertas. Había sido refaccionado a pleno hace pocos años por la Sra. Laura Jauregui Mujica, una argentina-uruguaya, que falleció en el año 2023.  Habiendo estado cerrado en el pasado verano, abrimos nuevamente sus puertas. Actualizado, manteniendo el cariño, el buen gusto que le había puesto Laura y ese aire de pueblo del lugar, reabre, parte del pueblo y la Pedrera. ", { "font-bold": "Con su nombre y su aire de siempre: Hotel BRISAS." }],
+    }
 
   },
   en: {
@@ -236,6 +257,7 @@ export default {
     },
     hotelInfo: [
       {
+        info: "Things to consider:",
         title: "General Information",
         items: [
           {
@@ -295,6 +317,27 @@ export default {
         ]
       }
     ],
+    hotelGallery: {
+      title: "Gallery",
+      subtitle: "Learn more about our hotel"
+    },
+    historia: {
+      title: "Our History",
+      content: [
+        { "font-bold": "This beautiful beach place was originally called Punta Rubia. " },
+        "It was the sailors of the time dazzled by its wide golden beaches visible from afar, out at sea. These golden sands were paired with a true balcony to the sea, composed of rock formations over 60 million years old, a fundamental testimony of the movement of continents as these rocks continue in South Africa. Hence its definitive name: ",
+        { "font-bold": "LA PEDRERA" },
+        ". It is one of the oldest resorts in the Department and 'the jewel of the Crown' of Rocha.\n\n",
+        "The first subdivision of the resort was carried out by Surveyor Adolfo Reis in November 1898, commissioned by Román Arrarte, owner of the large rural property it encompassed, which was later inherited by Angela, one of his twelve children. Families used to visit to enjoy that authentic balcony to the ocean that characterizes the resort since its origins. By 1910, about ten families, mostly Italians and Basques, had built their houses. Since then and until today, its village-like air, the tranquility of its dirt streets ending at the sea, make it a very charming place. Viewing the sunrises and the full moon reflected in the Ocean provides a unique spectacle. Its central little street, its old Church, whose bell belonged to a shipwrecked vessel on these shores, its air of then and now, its sunset sky, remind us of Rafael Alberti's poem in Marinero en Tierra: ",
+        { "italic": '“Who broke the golden windows of twilight? Oh open sky, of mountains, seas, winds..”' },
+        "Because La Pedrera is included within the Biosphere Reserve ‘Bañados del Este’; and there we can enjoy the incredible and rich landscapes with the highest diversity of flora and fauna. Horseback riding, outdoor sports, countryside, and much sea, with a family atmosphere and times gone by. If we look towards the sea from July to October, we will be amazed to see the Southern Right Whales passing from the south to other latitudes. Its excellent beaches invite swimming and recreation for the whole family. They also offer optimal conditions for surfing and sport fishing.\n\n",
+        { "font-bold": "In that place, and looking at the sea, Doña Alfonsa founded the first Inn in 1910. " },
+        "Today, more than 110 years later, what was is. And it opens its doors again. It had been fully renovated a few years ago by Mrs. Laura Jauregui Mujica, an Argentine-Uruguayan, who passed away in 2023. Having been closed last summer, we are reopening its doors. Updated, maintaining the affection, good taste Laura had put into it, and that village air of the place, it reopens, part of the town and La Pedrera. ",
+        { "font-bold": "With its name and its ever-present charm: Hotel BRISAS." }
+      ],
+    },
+
+
   },
   br: {
     slides: [
@@ -364,6 +407,7 @@ export default {
     },
     hotelInfo: [
       {
+        info: "Pontos a considerar:",
         title: "Informações Gerais",
         items: [
           {
@@ -423,6 +467,27 @@ export default {
         ]
       }
     ],
+    hotelGallery: {
+      title: "Galeria",
+      subtitle: "Saiba mais sobre nosso hotel"
+    },
+    historia: {
+      title: "Nossa História",
+      content: [
+        { "font-bold": "Este belo local de praia foi originalmente chamado Punta Rubia. " },
+        "Eram os navegadores da época deslumbrados pelas suas largas praias douradas visíveis de longe, no alto-mar. Essas areias douradas se combinavam com uma verdadeira varanda para o mar, composta por formações rochosas de mais de 60 milhões de anos, um testemunho fundamental do movimento dos continentes, pois essas rochas continuam na África do Sul. Daí o seu nome definitivo: ",
+        { "font-bold": "LA PEDRERA" },
+        ". É um dos balneários mais antigos do Departamento e 'a joia da Coroa' de Rocha.\n\n",
+        "O primeiro loteamento do balneário foi realizado pelo Agrimensor Adolfo Reis em novembro de 1898, encomendado por Román Arrarte, proprietário da grande propriedade rural que o abrangeu, e que foi posteriormente herdada por Angela, uma de seus doze filhos. Famílias costumavam visitar para desfrutar daquela autêntica varanda para o oceano que caracteriza o balneário desde seus origens. Em 1910, cerca de dez famílias, na sua maioria italianos e bascos, haviam construído suas casas. Desde então e até hoje, seu ar de vila, a tranquilidade de suas ruas de terra que terminam no mar, tornam-no um lugar muito encantador. Ver o nascer do sol e a lua cheia refletida no Oceano proporciona um espetáculo único. Sua pequena rua central, sua antiga Igreja, cuja campana pertenceu a um navio naufragado nessas costas, seu ar de então e de agora, seu céu ao entardecer, nos faz lembrar do poema de Rafael Alberti em Marinero en Tierra: ",
+        { "italic": '“Quem quebrou as janelas douradas do crepúsculo? Oh céu descoberto, de montes, mares, ventos..”' },
+        "Porque La Pedrera está incluída dentro da Reserva da Biosfera ‘Bañados del Este’; e nela podemos desfrutar das paisagens incríveis e ricas com a mais alta diversidade de flora e fauna. Passeios a cavalo, esportes ao ar livre, campo e muito mar, com um clima familiar e tempos passados. Se olharmos para o mar de julho a outubro, ficaremos surpresos ao ver as baleias-francas passando do sul para outras latitudes. Suas excelentes praias convidam ao banho e à recreação para toda a família. Elas também oferecem condições ótimas para a prática de surfe e pesca esportiva.\n\n",
+        { "font-bold": "Nesse local, e olhando para o mar, Dona Alfonsa fundou a primeira Pousada em 1910. " },
+        "Hoje, mais de 110 anos depois, o que foi é. E abre suas portas novamente. Havia sido totalmente reformada há poucos anos pela Sra. Laura Jauregui Mujica, uma argentino-uruguaia, que faleceu em 2023. Tendo estado fechada no verão passado, estamos reabrindo suas portas. Atualizada, mantendo o carinho, o bom gosto que Laura havia colocado e aquele ar de vila do local, reabre, parte da cidade e La Pedrera. ",
+        { "font-bold": "Com seu nome e seu charme de sempre: Hotel BRISAS." }
+      ],
+    },
+
+
 
 
   }
