@@ -3,10 +3,13 @@ import Carrusel from "./components/Carrusel/Carrusel";
 import LocationSection from "./sections/LocationSection";
 import HabitacionesYSuites from "./sections/HabitacionesYSuites";
 import Carrusel2 from "./components/Carrusel2/Carrusel2";
-import {CarruselImages1} from "./data"
-import MasterSuites from "./sections/MasterSuites";
+import { CarruselImages1, CarruselImages2 } from "./data"
+import Suites from "./sections/Suites";
+import useLocalizedContent from "@/hooks/useLocalizedContent";
 
 function App() {
+  const contentLocalized = useLocalizedContent()
+  const { masterSuites, bahiaSuites } = contentLocalized
   return (
     <>
       <Nav />
@@ -14,8 +17,9 @@ function App() {
       <LocationSection />
       <HabitacionesYSuites />
       <Carrusel2 images={CarruselImages1} />
-      <MasterSuites/>
-      <div className="h-[200vh] w-[10vw]" />
+      <Suites contenido={masterSuites} />
+      <Carrusel2 images={CarruselImages2} />
+      <Suites contenido={bahiaSuites} />
     </>
   );
 }

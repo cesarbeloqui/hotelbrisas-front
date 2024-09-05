@@ -5,6 +5,10 @@ import image4 from "@mastersuites/4.jpeg";
 import image5 from "@mastersuites/5.jpeg";
 import image6 from "@mastersuites/6.jpeg";
 import image7 from "@mastersuites/7.jpeg";
+import image8 from "@bahiasuites/1.jpg";
+import image9 from "@bahiasuites/2.jpeg";
+import image10 from "@bahiasuites/3.jpeg";
+import image11 from "@bahiasuites/4.jpeg";
 
 export const CarruselImages1 = [
   image1,
@@ -14,6 +18,12 @@ export const CarruselImages1 = [
   image5,
   image6,
   image7
+];
+export const CarruselImages2 = [
+  image8,
+  image9,
+  image10,
+  image11
 ];
 
 
@@ -50,10 +60,16 @@ export default {
     },
     masterSuites: {
       title: "Master Suites",
-      content: "Las suites MASTER son únicas. Ubicadas en las esquinas de la planta alta las dos comandan vistas increíbles de la playa desde sus amplios ventanales y terrazas.",
-      subcontent: "Máster East es la más cercana al mar, Máster West es la más amplia. Tomamos en consideración vuestra preferencia pero no podemos siempre garantizar cuál de las dos Máster será asignada, dependerá de disponibilidad y duración de la estadía.",
+      content: ["Las suites ", { "font-bold italic": "MASTER" }, " son únicas. Ubicadas en las esquinas de la planta alta las dos comandan vistas increíbles de la playa desde sus amplios ventanales y terrazas."],
+      subcontent: [{ "font-bold": "Máster East es la más cercana al mar, Máster West es la más amplia." }, " Tomamos en consideración vuestra preferencia pero no podemos siempre garantizar cuál de las dos Máster será asignada, dependerá de disponibilidad y duración de la estadía."],
       button: "Master Suites en imágenes"
-    }
+    },
+    bahiaSuites: {
+      title: "Bahía Suites",
+      content: ["Desde la planta alta ", { "font-bold italic": "BAHÍA SUITES" }, " comandan vistas espectaculares de la bahía y el mar hasta Cabo Polonio.Cada una cuenta con terraza privada.Contamos con 4 de ellas sin garantizar cuál de ellas será asignada en base a disponibilidad."],
+      button: "Bahía Suites en imágenes"
+    },
+
   },
   en: {
     slides: [
@@ -83,6 +99,15 @@ export default {
       content: "The MASTER suites are unique. Located on the corners of the upper floor, both command incredible views of the beach from their large windows and terraces.",
       subcontent: "Master East is the closest to the sea, Master West is the most spacious. We take your preference into consideration, but we cannot always guarantee which of the two Masters will be assigned; it will depend on availability and the length of stay.",
       button: "Master Suites in Pictures"
+    },
+    bahiaSuites: {
+      title: "Bahía Suites",
+      content: [
+        "From the upper floor ",
+        { "font-bold italic": "BAHÍA SUITES" },
+        " command spectacular views of the bay and the sea all the way to Cabo Polonio. Each one has a private terrace. We have 4 of them, but we cannot guarantee which one will be assigned, as it depends on availability."
+      ],
+      button: "Bahía Suites in images"
     }
   },
   br: {
@@ -114,6 +139,16 @@ export default {
       subcontent: "A Master East é a mais próxima do mar, a Master West é a mais espaçosa. Levamos em consideração a sua preferência, mas não podemos garantir sempre qual das duas Masters será designada; dependerá da disponibilidade e da duração da estadia.",
       button: "Master Suites em imagens"
     },
+    bahiaSuites: {
+      title: "Bahía Suites",
+      content: [
+        "Do andar superior ",
+        { "font-bold italic": "BAHÍA SUITES" },
+        " comandam vistas espetaculares da baía e do mar até Cabo Polonio. Cada uma tem um terraço privado. Temos 4 delas, mas não podemos garantir qual será designada, pois depende da disponibilidade."
+      ],
+      button: "Bahía Suites em imagens"
+    }
+
 
   }
 

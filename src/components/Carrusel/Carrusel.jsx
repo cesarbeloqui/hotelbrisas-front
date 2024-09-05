@@ -52,7 +52,7 @@ export default function FullscreenCarousel() {
             Autoplay({
                 delay: 3000,
             }),
-        ]} className="w-[98.786dvw] h-screen">
+        ]} className="w-custom h-screen">
             <CarouselContent className="h-full w-full">
                 {pairs.map(([slide, image], index) => (
                     <CarouselItem key={`${slide.id}-${index}`} className="h-full w-full">

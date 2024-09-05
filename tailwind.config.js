@@ -55,7 +55,9 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         cutive: ["Cutive", "serif"],
       },
-
+      width: {
+        'custom': '98.71093vw',  // Aquí defines el valor personalizado
+      },
       colors: {
         celeste: "#386AA3",
         blanco: "#FFFFFF",

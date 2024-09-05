@@ -11,9 +11,9 @@ export default function HabitacionesYSuites() {
 
 
     return (
-        <section id='suites' className="relative pt-32 pb-14 sm:py-32 ">
+        <section id='suites' className="relative pt-32 pb-14 sm:py-32">
             <div className="absolute sm:-top-[10vh] inset-0 z-0">
-                <SVG svg={fondoHabitaciones} className="w-[200vw] sm:h-auto sm:w-[98.786vw]" />
+                <SVG svg={fondoHabitaciones} className="w-[200vw] sm:h-auto sm:w-custom" />
             </div>
             <div className="relative z-10 container mx-auto px-4 text-center">
                 <h2 className="text-4xl font-cutive  text-celeste mb-4">
