@@ -25,6 +25,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+      "@servicios": path.resolve(__dirname, "./src/assets/servicios"),
+      "@gardesuites": path.resolve(__dirname, "./src/assets/gardesuites"),
       "@bahiasuites": path.resolve(__dirname, "./src/assets/bahiasuites"),
       "@mastersuites": path.resolve(__dirname, "./src/assets/mastersuites"),
       "@carrusel": path.resolve(__dirname, "./src/assets/carrusel"),

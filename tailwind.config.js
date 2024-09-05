@@ -59,7 +59,7 @@ export default {
         'custom': '98.71093vw',  // Aquí defines el valor personalizado
       },
       colors: {
-        celeste: "#386AA3",
+        celeste: "#386AA3",//#E6DDCF
         blanco: "#FFFFFF",
         negro: "#000000",
         beige: "#E6DDCF",

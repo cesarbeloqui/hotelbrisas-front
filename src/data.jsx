@@ -9,6 +9,10 @@ import image8 from "@bahiasuites/1.jpg";
 import image9 from "@bahiasuites/2.jpeg";
 import image10 from "@bahiasuites/3.jpeg";
 import image11 from "@bahiasuites/4.jpeg";
+import image12 from "@gardesuites/1.jpg";
+import image13 from "@gardesuites/2.jpg";
+import image14 from "@gardesuites/3.jpg";
+import image15 from "@gardesuites/4.jpeg";
 
 export const CarruselImages1 = [
   image1,
@@ -24,6 +28,12 @@ export const CarruselImages2 = [
   image9,
   image10,
   image11
+];
+export const CarruselImages3 = [
+  image12,
+  image13,
+  image14,
+  image15
 ];
 
 
@@ -69,6 +79,31 @@ export default {
       content: ["Desde la planta alta ", { "font-bold italic": "BAHÍA SUITES" }, " comandan vistas espectaculares de la bahía y el mar hasta Cabo Polonio.Cada una cuenta con terraza privada.Contamos con 4 de ellas sin garantizar cuál de ellas será asignada en base a disponibilidad."],
       button: "Bahía Suites en imágenes"
     },
+    gardenSuites: {
+      title: "Garden Suites",
+      content: ["Las suites ", { "font-bold italic": "GARDEN" }, ` se encuentran alrededor del jardín y la piscina. Amplias y con los mismos servicios que en planta alta GARDEN suites ¡cuentan con un espacio exterior privado y equipado para la relajación!`, {
+        "font-bold": `\nIdeales para parejas o para familias con pequeños.`
+      }, {
+          "font-bold": `\n\nOpciones triple consultar por WhatsApp `
+        }, "\nal +598 939-5795"],
+      button: "Garden Suites en imágenes"
+    },
+    servicios: {
+      title: "Nuestros Servicios",
+      subtitle: "Brisas es un oasis al lado del mar: ubicado a metros de la playa y de la calle principal.Cuenta con piscina y jardines interiores protegidos de los vientos rochenses.",
+      items: [
+        "Copa de Bienvenida.",
+        "Desayuno buffet.",
+        "WiFi en el hotel y las habitaciones.",
+        "A/C, caja de seguridad.",
+        "Pava eléctrica, mini-fridge, cristalería y servicio de té.",
+        'TV 43" Full HD.',
+        "Batas.",
+        "Living con estufa.",
+        "Patio / Deck en zona de piscina con reposeras y mesas.",
+        "En temporada para la playa: bolsa, toallas, sombreros y sillas de playa.",
+      ]
+    }
 
   },
   en: {
@@ -108,6 +143,35 @@ export default {
         " command spectacular views of the bay and the sea all the way to Cabo Polonio. Each one has a private terrace. We have 4 of them, but we cannot guarantee which one will be assigned, as it depends on availability."
       ],
       button: "Bahía Suites in images"
+    },
+    gardenSuites: {
+      title: "Garden Suites",
+      content: [
+        "The suites ",
+        { "font-bold italic": "GARDEN" },
+        " are located around the garden and the pool. Spacious and with the same services as the upper floor GARDEN suites, they come with a private outdoor space equipped for relaxation!",
+        { "font-bold": "\nIdeal for couples or families with young children." },
+        { "font-bold": "\n\nTriple options available, inquire via WhatsApp " },
+        "\nat +598 939-5795"
+      ],
+      button: "Garden Suites in images"
+    },
+    servicios: {
+      title: "Our Services",
+      subtitle: "Brisas is an oasis by the sea: located just meters from the beach and the main street. It features a pool and sheltered inner gardens protected from the Rocha winds.",
+      items: [
+        "Welcome drink.",
+        "Buffet breakfast.",
+        "WiFi in the hotel and rooms.",
+        "A/C, safe.",
+        "Electric kettle, mini-fridge, glassware, and tea service.",
+        '43" Full HD TV.',
+        "Bathrobes.",
+        "Living room with stove.",
+        "Patio / Deck in the pool area with loungers and tables.",
+        "Seasonal beach items: bag, towels, hats, and beach chairs."
+      ]
+
     }
   },
   br: {
@@ -147,8 +211,35 @@ export default {
         " comandam vistas espetaculares da baía e do mar até Cabo Polonio. Cada uma tem um terraço privado. Temos 4 delas, mas não podemos garantir qual será designada, pois depende da disponibilidade."
       ],
       button: "Bahía Suites em imagens"
+    },
+    gardenSuites: {
+      title: "Garden Suites",
+      content: [
+        "As suítes ",
+        { "font-bold italic": "GARDEN" },
+        " estão localizadas ao redor do jardim e da piscina. Espaçosas e com os mesmos serviços das suítes GARDEN no andar superior, contam com um espaço externo privado e equipado para relaxamento!",
+        { "font-bold": "\nIdeais para casais ou para famílias com crianças pequenas." },
+        { "font-bold": "\n\nOpções triplas, consulte pelo WhatsApp " },
+        "\nno +598 939-5795"
+      ],
+      button: "Garden Suites em imagens"
+    },
+    servicios: {
+      title: "Nossos Serviços",
+      subtitle: "Brisas é um oásis à beira-mar: localizado a poucos metros da praia e da rua principal. Conta com piscina e jardins internos protegidos dos ventos de Rocha.",
+      items: [
+        "Taça de Boas-Vindas.",
+        "Café da manhã buffet.",
+        "WiFi no hotel e nos quartos.",
+        "A/C, cofre.",
+        "Chaleira elétrica, mini-frigideira, vidros e serviço de chá.",
+        'TV 43" Full HD.',
+        "Roupões.",
+        "Sala de estar com aquecedor.",
+        "Pátio / Deck na área da piscina com espreguiçadeiras e mesas.",
+        "Em temporada para a praia: bolsa, toalhas, chapéus e cadeiras de praia."
+      ]
     }
-
 
   }
 
