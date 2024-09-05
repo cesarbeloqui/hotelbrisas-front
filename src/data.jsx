@@ -78,7 +78,7 @@ export default {
       direccion: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguay"
     },
     habitaciones: {
-      title: "Habitaciones & Suites", subtitle: "todas las habitaciones brisas son amplias y luminosas, cada una cuenta con un espacio exterior privado, haciendo brisas un destino cómodo."
+      title: "Habitaciones & Suites", subtitle: "Todas las habitaciones brisas son amplias y luminosas, cada una cuenta con un espacio exterior privado, haciendo brisas un destino cómodo."
     },
     masterSuites: {
       title: "Master Suites",
@@ -88,21 +88,21 @@ export default {
     },
     bahiaSuites: {
       title: "Bahía Suites",
-      content: ["Desde la planta alta ", { "font-bold italic": "BAHÍA SUITES" }, " comandan vistas espectaculares de la bahía y el mar hasta Cabo Polonio.Cada una cuenta con terraza privada.Contamos con 4 de ellas sin garantizar cuál de ellas será asignada en base a disponibilidad."],
+      content: ["Desde la planta alta ", { "font-bold italic": "BAHÍA SUITES" }, " comandan vistas espectaculares de la bahía y el mar hasta Cabo Polonio. Cada una cuenta con terraza privada. Contamos con 4 de ellas sin garantizar cuál de ellas será asignada en base a disponibilidad."],
       button: "Bahía Suites en imágenes"
     },
     gardenSuites: {
       title: "Garden Suites",
-      content: ["Las suites ", { "font-bold italic": "GARDEN" }, ` se encuentran alrededor del jardín y la piscina. Amplias y con los mismos servicios que en planta alta GARDEN suites ¡cuentan con un espacio exterior privado y equipado para la relajación!`, {
+      content: ["Las suites ", { "font-bold italic": "GARDEN" }, ` se encuentran alrededor del jardín y la piscina. Amplias y con los mismos servicios que en planta alta GARDEN suites`, {
         "font-bold": `\nIdeales para parejas o para familias con pequeños.`
       }, {
           "font-bold": `\n\nOpciones triple consultar por WhatsApp `
-        }, "\nal +598 939-5795"],
+        }, "\nal +598 939-55795"],
       button: "Garden Suites en imágenes"
     },
     servicios: {
       title: "Nuestros Servicios",
-      subtitle: "Brisas es un oasis al lado del mar: ubicado a metros de la playa y de la calle principal.Cuenta con piscina y jardines interiores protegidos de los vientos rochenses.",
+      subtitle: "Brisas es un oasis al lado del mar: ubicado a metros de la playa y de la calle principal. Cuenta con piscina y jardines interiores protegidos de los vientos rochenses.",
       items: [
         "Copa de Bienvenida.",
         "Desayuno buffet.",

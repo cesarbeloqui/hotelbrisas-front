@@ -41,18 +41,18 @@ export default function Historia() {
     const truncatedContent = truncateFormattedContent(content, 1000)
 
     return (
-        <section className="relative flex flex-col md:flex-row items-center justify-center bg-blanco p-8 sm:mt-8">
-            <div className="absolute inset-0 z-0">
+        <section id='historia' className="relative flex flex-col md:flex-row items-center justify-center bg-blanco p-8 sm:mt-8">
+            <div className="absolute inset-0 z-0 w-custom overflow-x-hidden">
                 <SVG svg={fondoHabitaciones} className="w-[200vw] sm:h-auto sm:w-custom absolute top-[3vh] sm:-top-[10vh] left-1/2 transform -translate-x-1/2 -z-10" />
             </div>
             <div className="md:w-1/4 mb-8 md:mb-0">
                 <LazyImage
                     src={img}
                     alt="Imagen de un libro sobre una mesa de madera"
-                    className=""
+                    className="hidden sm:inline"
                 />
             </div>
-            <div className="md:w-3/4 md:pl-8 md:-ml-16 z-10">
+            <div className="md:w-3/4 md:pl-8 md:-ml-16 z-0">
                 <h2 className="text-3xl font-cutive font-bold text-celeste mb-4">{title}</h2>
                 <div className="bg-beige p-6">
                     {isMobile ? (
@@ -66,12 +66,12 @@ export default function Historia() {
                                         Ver más
                                     </Button>
                                 </Dialog.Trigger>
-                                <Dialog.Portal>
-                                    <Dialog.Overlay className="bg-black bg-opacity-50 fixed inset-0" />
-                                    <Dialog.Content className="fixed top-[60%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 rounded-lg max-w-[425px] max-h-[85vh] overflow-y-auto">
+                                <Dialog.Portal >
+                                    <Dialog.Overlay className="bg-blanco bg-opacity-95 fixed inset-0" />
+                                    <Dialog.Content className="fixed top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 bg-beige p-6 rounded-lg w-[90vw] max-h-[80vh] overflow-y-auto duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%]">
                                         <Dialog.Close asChild>
                                             <button className="sticky top-0 left-[400px] rounded-full bg-black opacity-35 text-white">
-                                                <CloseIcon />
+                                                <CloseIcon/>
                                             </button>
                                         </Dialog.Close>
                                         <div className="mt-2">
@@ -79,7 +79,7 @@ export default function Historia() {
                                                 <TextFormatter content={content} />
                                             </p>
                                         </div>
-
+                                        
                                     </Dialog.Content>
                                 </Dialog.Portal>
                             </Dialog.Root>

@@ -136,9 +136,11 @@ export default function NavegacionHotel() {
             ))}
           </div>
           <div className="hidden lg:flex items-center space-x-4">
-            <button className="font-cutive bg-celeste text-white buttonReservas px-4 pb-1 pt-2 rounded-full hover:bg-white hover:text-celeste transition-colors">
-              {localizedContent.reservas}
-            </button>
+            <a href="https://hotels.cloudbeds.com/reservation/qliQoE" target="_blank" rel="noopener noreferrer">
+              <button className="font-cutive bg-celeste text-white buttonReservas px-4 pb-1 pt-2 rounded-full hover:bg-white hover:text-celeste transition-colors">
+                {localizedContent.reservas}
+              </button>
+            </a>
             <LanguageSelector />
           </div>
           <button className="lg:hidden text-" onClick={toggleMenu}>
@@ -160,14 +162,16 @@ export default function NavegacionHotel() {
               ))}
             </div>
             <div className="mt-4 flex flex-col space-y-2">
+              <a href="https://hotels.cloudbeds.com/reservation/qliQoE" target="_blank" rel="noopener noreferrer">
               <button className="bg-celeste text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition-colors">
                 {localizedContent.reservas}
               </button>
-              <LanguageSelector />
-            </div>
+            </a>
+            <LanguageSelector />
+          </div>
           </div>
         )}
-      </div>
-    </nav>
+    </div>
+    </nav >
   );
 }

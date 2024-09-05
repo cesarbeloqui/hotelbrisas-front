@@ -10,6 +10,7 @@ import Servicios from "./sections/Servicios"
 import HotelInfo from "./sections/HotelInfo/HotelInfo";
 import HotelGallery from "./sections/HotelGallery";
 import Historia from "./sections/Historia";
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 
 
 
@@ -22,6 +23,7 @@ function App() {
   ]
   return (
     <>
+      <Whatsapp/>
       <Nav />
       <Carrusel />
       <LocationSection />

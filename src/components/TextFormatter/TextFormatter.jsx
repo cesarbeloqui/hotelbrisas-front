@@ -4,8 +4,8 @@ const TextFormatter = ({ content }) => {
     // Función auxiliar para manejar los saltos de línea y los enlaces de WhatsApp
     const renderWithLineBreaksAndLinks = (text) => {
         // Reemplaza el número de teléfono con un enlace de WhatsApp
-        const phoneNumberPattern = /\+598 \d{3}-\d{4}/; // Patrón para detectar el número de teléfono
-        const whatsappLink = "https://wa.me/5989395795"; // Enlace de WhatsApp
+        const phoneNumberPattern = /\+598 \d{3}-\d{5}/; // Patrón para detectar el número de teléfono
+        const whatsappLink = "https://wa.me/59893955795"; // Enlace de WhatsApp
 
         return text.split('\n').map((line, index) => {
             // Reemplaza el número de teléfono con un enlace
