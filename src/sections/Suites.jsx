@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Suites = ({ contenido }) => {
     const { title, content, subcontent, button } = contenido
     return (
-        <div className="p-0 -mt-[20vh] mb-[5vh] sm:mb-[15vh]">
+        <div className="p-0 -mt-[20vh] mb-[5vh] sm:mb-[15vh] w-custom">
             <div className="bg-beige px-5 mx-5 sm:px-12 py-5 sm:py-10 max-w-4xl sm:ml-[10vw] relative w-[90vw] sm:w-[60vw]">
                 <h2 className="text-4xl md:text-5xl font-montserrat text-gris sm:mb-6"><TextFormatter content={title} /></h2>
                 <p className="text-lg text-gray-700 mb-12">

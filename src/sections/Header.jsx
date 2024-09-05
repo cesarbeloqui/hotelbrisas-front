@@ -7,7 +7,7 @@ export default function Header({ info }) {
     const { id, title, subtitle } = info
 
     return (
-        <section id={id} className="relative pt-32 pb-14 sm:py-32 [clip-path:inset(-9999px_0_0_0)]">
+        <section id={id} className="relative pt-32 pb-14 sm:py-32 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <SVG svg={fondoHabitaciones} className="w-[200vw] sm:h-auto sm:w-custom absolute top-[3vh] sm:-top-[10vh] left-1/2 transform -translate-x-1/2 -z-10" />
             </div>
