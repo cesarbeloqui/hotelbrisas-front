@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 const LoadComponent = ({ children, loading, setIsLoading, useShow }) => {
   const [show, setShow] = useShow;
   const loadingCount = useSelector((state) => state.loading.loadingCount);
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     if (loadingCount > 0) {
