@@ -17,8 +17,19 @@ html {
 #ubicacion {
     scroll-margin-top: 8vh;
 }
+
 @media (min-width: 640px) {
     #ubicacion {
         scroll-margin-top: 12vh;
+    }
+}
+
+#historia {
+    scroll-margin-top: 0vh;
+}
+
+@media (min-width: 640px) {
+    #historia {
+        scroll-margin-top: 10vh;
     }
 }

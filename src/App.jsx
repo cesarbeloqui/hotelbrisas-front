@@ -11,6 +11,9 @@ import HotelInfo from "./sections/HotelInfo/HotelInfo";
 import HotelGallery from "./sections/HotelGallery";
 import Historia from "./sections/Historia";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
+import ContactSection from "./sections/ContactSection";
+import MapComponent from "./sections/Mapa/Mapa";
+import Footer from "./sections/Footer";
 
 
 
@@ -39,7 +42,9 @@ function App() {
       <HotelInfo />
       <HotelGallery/>
       <Carrusel2 images={CarruselImages4} />
-      <Historia/>
+      <Historia />
+      <ContactSection />
+      <Footer/>
     </>
   );
 }

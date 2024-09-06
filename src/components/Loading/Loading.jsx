@@ -1,6 +1,8 @@
 // Logo en SVG
+import { useSelector } from "react-redux";
 import "./index.css";
 import { logoFooter } from "@/media/media";
+import { selectLoadingCount } from "../LazyImage/redux/loadingSlice";
 
 const LogoSVG = ({ className }) => (
   <div dangerouslySetInnerHTML={{ __html: logoFooter }} className={className} />

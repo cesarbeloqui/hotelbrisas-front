@@ -3,24 +3,24 @@ import { useEffect, useState } from "react";
 
 const LoadComponent = ({ children, loading, setIsLoading, useShow }) => {
   const [show, setShow] = useShow;
-  const loadingCount = useSelector((state) => state.loading.loadingCount);
+  const loadingCount = useSelector((state) => state.loading.loadingCount);  // Hook incondicional
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     if (loadingCount > 0) {
       setIsVisible(true);
     } else {
-
       const timeoutId = setTimeout(() => {
-        setIsVisible(false)
+        setIsVisible(false);
       }, 1000);
-      setShow(true)
+      setShow(true);
       return () => clearTimeout(timeoutId);
     }
-  }, [loadingCount]);
+  }, [loadingCount, setShow]);
 
   return (
     <>
+      {/* Renderizado incondicional basado en isVisible */}
       {isVisible && (
         <div
           className={`fade-${loadingCount > 0
@@ -31,6 +31,8 @@ const LoadComponent = ({ children, loading, setIsLoading, useShow }) => {
           {typeof loading === 'function' ? loading() : loading}
         </div>
       )}
+      {/* Renderizado de los children después de que isVisible es falso */}
+      {!isVisible && children}
     </>
   );
 };

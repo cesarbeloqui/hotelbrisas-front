@@ -35,6 +35,7 @@ export default defineConfig({
       "@mastersuites": path.resolve(__dirname, "./src/assets/mastersuites"),
       "@carrusel": path.resolve(__dirname, "./src/assets/carrusel"),
       "@components": path.resolve(__dirname, "./src/components"),
+      "@assets": path.resolve(__dirname, "./src/assets"),
     },
   },
   build: {

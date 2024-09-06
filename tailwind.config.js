@@ -65,6 +65,7 @@ export default {
         beige: "#E6DDCF",
         darkceleste: "#B0C6DE",
         gris: "#3C3C3B",
+        grisclaro: "#EEEEEE",
         hab: "#575756"
 
       },

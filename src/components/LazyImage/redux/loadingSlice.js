@@ -27,4 +27,6 @@ const loadingSlice = createSlice({
 });
 
 export const { startLoading, stopLoading } = loadingSlice.actions;
+export const selectLoadingCount = (state) => state.loading.loadingCount;
+
 export default loadingSlice.reducer;

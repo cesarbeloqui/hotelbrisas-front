@@ -179,6 +179,16 @@ export default {
     historia: {
       title: "Nuestra Historia",
       content: [{ "font-bold": "A este hermoso lugar de playa primero la llamaron Punta Rubia. " }, "Fueron los navegantes de la época encandilados por sus anchas playas doradas que se vislumbraban desde la lejanía, mar adentro. Esas arenas doradas se conjugaban con un verdadero balcón al mar, compuesto por formaciones rocosas de más de 60 millones de años, testimonio fundamental del desplazamiento de los continentes ya que las mismas rocas continúan en Sudáfrica. De allí su nombre definitivo: ", { "font-bold": "LA PEDRERA" }, ". Es uno de los balnearios más antiguos del Departamento, y “la joya de la Corona”, de Rocha.\n\n", "El primer amanzanamiento del balneario fue realizado por el Agrimensor Adolfo Reis, en noviembre de 1898 y le fue encargado por Román Arrarte, dueño de la enorme propiedad rural que lo abarcaba, y que posteriormente heredó Angela, una de sus doce hijos. Allí iban familias amigas a disfrutar ese auténtico balcón al océano que caracteriza al balneario desde sus orígenes. Hacia el año 1910 habían levantado sus casas unas diez familias, en su mayoría italianos y vascos. Desde entonces y hasta hoy, su aire a pueblo, la tranquilidad de sus calles de tierra, que mueren en el mar, la convierten en un lugar de mucho encanto. Visualizar desde allí los amaneceres y la luna llena reflejada en el Océano proporciona un espectáculo único. Su callecita del centro, su antigua Iglesia, cuya campana perteneció a un barco hundido en estas costas, su aire de entonces y de ahora, su cielo al atardecer, nos hace recordar aquel poema de Rafael Alberti en Marinero en Tierra: ", { "italic": '“¿Quién rompió las doradas vidrieras del crepúsculo? ¡Oh cielo descubierto, de montes, mares, vientos..”.' }, "Porque La Pedrera se incluye dentro de la Reserva de Biósfera «Bañados del Este»; y en ella podemos disfrutar de los increíbles y ricos paisajes con la más alta diversidad de flora y fauna. Cabalgatas, deportes al aire libre, campo y mucho mar, con aire de familia y tiempos idos.  Si miramos hacia el mar desde julio hasta octubre, nos sorprenderemos al ver a las ballenas Francas, en su pasaje desde el sur hacia otras latitudes. Sus excelentes playas invitan al baño y a la recreación, de toda la familia. Asimismo, nos brindan óptimas condiciones para la práctica del surf y la pesca deportiva.\n\n", { "font-bold": "En ese lugar, y mirando el mar, Doña Alfonsa, fundó en 1910 la primera Posada. " }, "Hoy, a más de 110 años, lo que fue es. Y abre nuevamente sus puertas. Había sido refaccionado a pleno hace pocos años por la Sra. Laura Jauregui Mujica, una argentina-uruguaya, que falleció en el año 2023.  Habiendo estado cerrado en el pasado verano, abrimos nuevamente sus puertas. Actualizado, manteniendo el cariño, el buen gusto que le había puesto Laura y ese aire de pueblo del lugar, reabre, parte del pueblo y la Pedrera. ", { "font-bold": "Con su nombre y su aire de siempre: Hotel BRISAS." }],
+    },
+    contact: {
+      title: "Dejanos tus consultas",
+      email: "reservas@hotelbrisas.uy",
+      phone: { number: "+59844792265", text: "Tel: " },
+      whatsapp: "5989395579",
+      address: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguay.",
+      beachDistance: "A 100 M DE LA PLAYA",
+      caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
+      joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
     }
 
   },
@@ -330,7 +340,16 @@ export default {
         { "font-bold": "With its name and its ever-present charm: Hotel BRISAS." }
       ],
     },
-
+    contact: {
+      title: "Send us your inquiries",
+      email: "reservas@hotelbrisas.uy",
+      phone: { number: "+59844792265", text: "Phone: " },
+      whatsapp: "5989395579",
+      address: "Santa Teresa s/n Corner Laguna Merín, 27004 La Pedrera, Uruguay.",
+      beachDistance: "100 M FROM THE BEACH",
+      caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
+      joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
+    }
 
   },
   br: {
@@ -480,7 +499,16 @@ export default {
         { "font-bold": "Com seu nome e seu charme de sempre: Hotel BRISAS." }
       ],
     },
-
+    contact: {
+      title: "Envie-nos suas consultas",
+      email: "reservas@hotelbrisas.uy",
+      phone: { number: "+59844792265", text: "Tel: " },
+      whatsapp: "5989395579",
+      address: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguai.",
+      beachDistance: "A 100 M DA PRAIA",
+      caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
+      joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
+    }
 
 
 
