@@ -189,6 +189,9 @@ export default {
       beachDistance: "A 100 M DE LA PLAYA",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
       joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
+    },
+    footer: {
+      title: "¡Contáctanos!"
     }
 
   },
@@ -349,6 +352,9 @@ export default {
       beachDistance: "100 M FROM THE BEACH",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
       joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
+    },
+    footer: {
+      title: "Contact Us!"
     }
 
   },
@@ -508,6 +514,9 @@ export default {
       beachDistance: "A 100 M DA PRAIA",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
       joseIgnacio: [{ "font-bold text-celeste": "José Ignacio: " }, "87 km."],
+    },
+    footer: {
+      title: "Entre em contato!"
     }
 
 

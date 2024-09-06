@@ -4,8 +4,12 @@ import WpIconAzul from "@icons/WpIconAzul.svg?react"
 import PositionIcon from "@icons/PositionIcon.svg?react"
 import LogoFooter from "@assets/LogoFooter.svg?react"
 import iconUbic from "@assets/iconLocalizacionChico.png"
+import useLocalizedContent from "@/hooks/useLocalizedContent"
 
 export default function Footer() {
+    const localizedContent = useLocalizedContent()
+    const { footer } = localizedContent
+    const { title } = footer
     return (
         <footer className="bg-beige py-8 px-9">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
@@ -13,7 +17,7 @@ export default function Footer() {
                     <LogoFooter alt="Brisas de la Pedrera" className="h-24" />
                 </div>
                 <div className="text-center md:text-left mb-6 md:mb-0">
-                    <h2 className="text-celeste text-2xl font-bold font-cutive mb-4">¡Contáctanos!</h2>
+                    <h2 className="text-celeste text-2xl font-bold font-cutive mb-4">{title}</h2>
                     <div className="flex items-center justify-center md:justify-start mb-2">
                         <EmailIcon className="w-4 mr-2" />
                         <a href="mailto:reservas@hotelbrisas.uy" className="text-gris">
