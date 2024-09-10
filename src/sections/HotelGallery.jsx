@@ -9,7 +9,7 @@ export default function HotelGallery() {
             <div className=" bg-beige px-7 pt-4 pb-1 mb-3">
                 <h2 className="text-3xl font-serif text-celeste ">{title}</h2>
             </div>
-            <p className="text-gris text-lg font-semibold">
+            <p className="text-gris text-lg font-semibold text-center sm:text-left">
                 {subtitle}
             </p>
         </section>

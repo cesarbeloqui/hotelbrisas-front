@@ -1,5 +1,3 @@
-import React from 'react';
-import { MapPin } from 'lucide-react';
 import LazyImage from '@/components/LazyImage/LazyImage';
 import localizacion from "@/assets/localizacion.png"
 import iconLocalizacion from "@/assets/iconLocalizacion.png"
@@ -18,22 +16,23 @@ export default function LocationSection() {
                     className="object-cover w-full h-full"
                 />
             </div>
-            <div className='flex sm:flex-row flex-col items-center ml-4 mt-4 bg-blanco py-4 justify-start items-start  sm:justify-around relative h-[16vh]'>
-
+            <div className='flex sm:flex-row flex-col ml-4 mt-4 bg-blanco py-4 justify-start items-start  sm:justify-around relative h-[16vh]'>
                 <div className="flex items-start relative mx-4">
                     <div className="absolute -top-20 bg-celeste text-blanco py-2 px-5 rounded-lg text-sm font-semibold">
                         {ubicacion.lead}
                     </div>
-                    <LazyImage src={iconLocalizacion} className="text-celeste mr-2 flex-shrink-0 h-16" />
-                    <div>
-                        <h2 className="font-cutive text-xl font-medium text-celeste">{ubicacion.title}</h2>
-                        <p className="text-celeste sm:w-[24vw]">
-                            {ubicacion.direccion}
-                        </p>
-                    </div>
+                    <a href="https://maps.app.goo.gl/S8obcYR8EDzhWeUR6" target="_blank" rel="noopener noreferrer" className='inline-flex'>
+                        <LazyImage src={iconLocalizacion} className="text-celeste mr-2 flex-shrink-0 h-16" />
+                        <div>
+                            <h2 className="font-cutive text-xl font-medium text-celeste">{ubicacion.title}</h2>
+                            <p className="text-celeste sm:w-[24vw]">
+                                {ubicacion.direccion}
+                            </p>
+                        </div>
+                    </a>
                 </div>
 
-                <div className="mt-4 flex relative sm:justify-between items-start text-sm text-gray-500 sm:-top-8">
+                <div className="mt-4 mx-auto sm:mx-0 flex flex-col sm:flex-row sm:relative sm:justify-between items-start text-sm text-gray-500 sm:-top-8">
                     <span className='mr-3 flex items-start'>
                         <LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-0" />
                         <span className='mr-1 text-celeste font-bold'>
@@ -41,12 +40,12 @@ export default function LocationSection() {
                         </span>
                         39 km
                     </span>
-                    <span className='mx-3 text-celeste font-bold'>
+                    <span className='mx-3 text-celeste font-bold hidden sm:inline'>
                         |
                     </span>
-                    <span className='ml-3 flex items-start'>
+                    <span className='sm:ml-3 flex items-start'>
                         <LazyImage src={iconLocalizacionChico} className="h-4 mr-1 mt-0" />
-                        <span className='text-celeste font-bold'>
+                        <span className='text-celeste font-bold mr-1'>
                             José Ignacio:
                         </span>
                         87 km

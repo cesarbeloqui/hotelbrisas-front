@@ -13,7 +13,7 @@ import Historia from "./sections/Historia";
 import Whatsapp from "./components/Whatsapp/Whatsapp";
 import ContactSection from "./sections/ContactSection";
 import MapComponent from "./sections/Mapa/Mapa";
-import Footer from "./sections/Footer";
+import Footer from "./sections/Footer/Footer";
 
 
 

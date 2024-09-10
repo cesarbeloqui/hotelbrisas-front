@@ -65,25 +65,25 @@ const MapComponent = ({ className }) => {
             }}
           >
             <Popup>
-              <a
-                href={marker.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className=""
-              >
-                <div className="text-left popup" id={marker.id}>
-                  <h3 className="text-celeste font-semibold text-lg">
+              <div className="text-left popup sm:w-auto w-24" id={marker.id}>
+                <a
+                  href={marker.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=""
+                >
+                  <h3 className="text-celeste font-semibold sm:text-lg">
                     {marker.title}
                   </h3>
-                  <p className="text-xs font-bold text-gris">
+                  <p className="text-[0.5rem] sm:text-xs font-bold text-gris">
                     {marker.address}
                   </p>
                   <p className="text-base text-letraMarron">{marker.hours}</p>
-                  <p className="text-[0.6rem] text-letraMarron">
+                  <p className="text-[0.4rem] sm:text-[0.7rem] text-letraMarron">
                     Click Acá para ir a Maps
                   </p>
-                </div>
-              </a>
+                </a>
+              </div>
             </Popup>
           </Marker>
         ))}
