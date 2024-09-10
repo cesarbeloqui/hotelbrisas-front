@@ -20,6 +20,10 @@ export default defineConfig({
           src: "src/sitemap.xml",
           dest: "",
         },
+        {
+          src: "src/logo.png",
+          dest: "",
+        },
       ],
     }),
   ],
