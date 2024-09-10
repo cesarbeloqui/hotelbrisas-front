@@ -35,3 +35,25 @@ html {
         scroll-margin-top: 10vh;
     }
 }
+
+.fade-in-out {
+    animation: fadeInOut 2s ease-in-out infinite;
+    /* Animación infinita con una duración de 2 segundos */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.5;
+        /* Comienza completamente transparente */
+    }
+
+    50% {
+        opacity: 1;
+        /* Totalmente visible en la mitad de la animación */
+    }
+
+    100% {
+        opacity: 0.5;
+        /* Termina nuevamente transparente */
+    }
+}
