@@ -1,5 +1,5 @@
 import LazyImage from '@/components/LazyImage/LazyImage';
-import localizacion from "@/assets/localizacion.png"
+import localizacion from "@/assets/localizacion.jpg"
 import iconLocalizacion from "@/assets/iconLocalizacion.png"
 import iconLocalizacionChico from "@/assets/iconLocalizacionChico.png"
 import useLocalizedContent from '@/hooks/useLocalizedContent';

@@ -1,22 +1,48 @@
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
-const LoadComponent = ({ children, loading, setIsLoading, useShow }) => {
+const LoadComponent = ({  loading, useShow }) => {
   const [show, setShow] = useShow;
   const loadingCount = useSelector((state) => state.loading.loadingCount);  // Hook incondicional
   const [isVisible, setIsVisible] = useState(true);
+  const [previousLoadingCount, setPreviousLoadingCount] = useState(0);
+  const [hasDetectedFirstZero, setHasDetectedFirstZero] = useState(false);
+
 
   useEffect(() => {
-    if (loadingCount > 0) {
+    console.log("Loading count:", loadingCount);
+/*     if (previousLoadingCount > 0 && loadingCount === 0) {
+      if (hasDetectedFirstZero) {
+        setShow(true)
+      } else {
+        setHasDetectedFirstZero(true);
+      }
+    }
+    setPreviousLoadingCount(loadingCount); */
+    if (loadingCount > 0 ) {
       setIsVisible(true);
     } else {
       const timeoutId = setTimeout(() => {
         setIsVisible(false);
-      }, 1000);
-      setShow(true);
+        setShow(true);
+      }, 2000);
       return () => clearTimeout(timeoutId);
     }
-  }, [loadingCount, setShow]);
+  }, [loadingCount]);
+
+
+  /* 
+  
+      if (loadingCount > 0) {
+      setIsVisible(true);
+    } else {
+      const timeoutId = setTimeout(() => {
+        setIsVisible(false);
+        setShow(true);
+      }, 2000);
+      return () => clearTimeout(timeoutId);
+    }
+  */
 
   return (
     <>
@@ -24,15 +50,14 @@ const LoadComponent = ({ children, loading, setIsLoading, useShow }) => {
       {isVisible && (
         <div
           className={`fade-${loadingCount > 0
-            ? "enter fade-enter-active"
+            ? ""
             : "exit fade-exit-active"
             }`}
         >
           {typeof loading === 'function' ? loading() : loading}
         </div>
       )}
-      {/* Renderizado de los children después de que isVisible es falso */}
-      {!isVisible && children}
+
     </>
   );
 };

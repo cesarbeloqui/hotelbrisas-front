@@ -10,7 +10,7 @@ import useLocalizedContent from "@/hooks/useLocalizedContent";
 import ArrowLeft from "@icons/arrowLeft.svg?react";
 import ArrowRight from "@icons/arrowRight.svg?react";
 import Autoplay from "embla-carousel-autoplay";
-import image1 from "@carrusel/1.png";
+import image1 from "@carrusel/1.jpg";
 import image2 from "@carrusel/2.jpg";
 import image3 from "@carrusel/3.jpg";
 import image4 from "@carrusel/4.jpg";
