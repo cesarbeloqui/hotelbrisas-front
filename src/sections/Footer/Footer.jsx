@@ -17,7 +17,7 @@ export default function Footer() {
         <>
             <footer className='bg-beige py-8 px-9'>
                 <div className='container mx-auto px-4 flex flex-col md:flex-row sm:items-center justify-between text-sm  sm:text-base'>
-                    <div className='mb-6 md:mb-0'>
+                    <div className='mb-6 md:mb-0 flex items-center justify-center'>
                         <LogoFooter alt='Brisas de la Pedrera' className='h-24' />
                     </div>
                     <div className='text-center md:text-left mb-6 md:mb-0'>
