@@ -43,8 +43,7 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
           if (directory.includes(fileNameWithoutNumber)) {
             return `${directory}/${fileName}/${width}.${extension} ${width}w`;
           } else {
-            console.log(`El ${directory} NO contiene ${fileNameWithoutNumber}.`);
-            console.log(`${directory}/${fileNameWithoutNumber}/${fileName}/${width}.${extension} ${width}w`);
+            return `${directory}/${fileNameWithoutNumber}/${fileName}/${width}.${extension} ${width}w`
           }
           //https://hotelbrisas-front.vercel.app/assets/bahiasuites/bahiasuites-1/295.jpg
         })
