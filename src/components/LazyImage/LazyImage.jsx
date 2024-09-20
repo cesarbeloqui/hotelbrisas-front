@@ -33,21 +33,18 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
           // extraer extension del archivo:
           const extension = fileWithExtension.split('.')[1];
           const [width, height] = size.split('×').map(Number);
-/*           console.log('directory', directory);
-          console.log('fileName', fileName);
-          console.log('width', width);
-          console.log('extension', extension); */
+          /*           console.log('directory', directory);
+                    console.log('fileName', fileName);
+                    console.log('width', width);
+                    console.log('extension', extension); */
           const fileNameWithoutNumber = fileName.split("-")[0]
           /* console.log('fileNameWithoutNumber', fileNameWithoutNumber); */
 
           if (directory.includes(fileNameWithoutNumber)) {
-            console.log(`El ${directory} contiene ${fileNameWithoutNumber}.`);
+            return `${directory}/${fileName}/${width}.${extension} ${width}w`;
           } else {
             console.log(`El ${directory} NO contiene ${fileNameWithoutNumber}.`);
           }
-
-          //                        
-          return `${directory}/${fileName}/${width}.${extension} ${width}w`;
         })
         .join(', ');
       setSrcSet(srcSet);
