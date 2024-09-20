@@ -1,14 +1,14 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { startLoading, stopLoading } from "./redux/loadingSlice";
-import imagesData from "../../rize.json"
-import { removeLastPartAndExtractFileName } from "./utils";
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { startLoading, stopLoading } from './redux/loadingSlice';
+import imagesData from '../../rize.json';
+import { removeLastPartAndExtractFileName } from './utils';
 const LazyImage = ({ src, alt, className, onLoad }) => {
-  const { directory, fileName, fileWithExtension } = removeLastPartAndExtractFileName(src)
+  const { directory, fileName, fileWithExtension } = removeLastPartAndExtractFileName(src);
   const dispatch = useDispatch();
   const [imageSizes, setImageSizes] = useState([]);
-  const [srcSet, setSrcSet] = useState("")
+  const [srcSet, setSrcSet] = useState('');
 
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -28,12 +28,28 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
   ]
     */
     if (imageSizes.length > 0) {
-      const srcSet = imageSizes.map((size, index) => {
-        // extraer extension del archivo:
-        const extension = fileWithExtension.split(".")[1]
-        const [width, height] = size.split("×").map(Number);
-        return `${directory}/${fileName}/${width}.${extension} ${width}w`;
-      }).join(", ");
+      const srcSet = imageSizes
+        .map((size, index) => {
+          // extraer extension del archivo:
+          const extension = fileWithExtension.split('.')[1];
+          const [width, height] = size.split('×').map(Number);
+          console.log('directory', directory);
+          console.log('fileName', fileName);
+          console.log('width', width);
+          console.log('extension', extension);
+          const fileNameWithoutNumber = fileName.split("-")[0]
+          console.log('fileNameWithoutNumber', fileNameWithoutNumber);
+
+          if (directory.includes(fileNameWithoutNumber)) {
+            console.log(`El ${directory} contiene ${fileNameWithoutNumber}.`);
+          } else {
+            console.log(`El ${directory} NO contiene ${fileNameWithoutNumber}.`);
+          }
+
+          //                        
+          return `${directory}/${fileName}/${width}.${extension} ${width}w`;
+        })
+        .join(', ');
       setSrcSet(srcSet);
     }
   }, [imageSizes]);
@@ -56,7 +72,15 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
     <>
       {!loaded && <></>}
       {/* Muestra el componente de carga mientras la imagen se carga */}
-      {loaded && srcSet !== "" && <img src={src} alt={alt} className={className} srcSet={srcSet} sizes={imagesData[fileWithExtension]?.sizes} />}
+      {loaded && srcSet !== '' && (
+        <img
+          src={src}
+          alt={alt}
+          className={className}
+          srcSet={srcSet}
+          sizes={imagesData[fileWithExtension]?.sizes}
+        />
+      )}
     </>
   );
 };

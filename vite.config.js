@@ -16,10 +16,7 @@ export default defineConfig({
           src: "src/robots.txt",
           dest: "",
         },
-        {
-          src: "src/assets/*",  // Selecciona solo el contenido de la carpeta assets
-          dest: "assets",       // Copia el contenido directamente a dist/assets/
-        },
+
         {
           src: "src/sitemap.xml",
           dest: "",
