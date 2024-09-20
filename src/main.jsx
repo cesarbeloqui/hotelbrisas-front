@@ -13,9 +13,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <PersistGate persistor={persistor}>
       <Provider store={store}>
-        <ImageProvider loading={Loading}>
+{/*         <ImageProvider loading={Loading}> */}
           <App />
-        </ImageProvider >
+{/*         </ImageProvider > */}
       </Provider>
     </PersistGate>
   </StrictMode>

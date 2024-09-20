@@ -26,10 +26,11 @@ function App() {
   ]
   return (
     <>
-      <Whatsapp/>
+      <Whatsapp />
       <Nav />
       <Carrusel />
       <LocationSection />
+
       <Header info={headers[0]} />
       <Carrusel2 images={CarruselImages1} />
       <Suites contenido={masterSuites} />
@@ -40,11 +41,13 @@ function App() {
       <Header info={headers[1]} />
       <Servicios />
       <HotelInfo />
-      <HotelGallery/>
+      <HotelGallery />
       <Carrusel2 images={CarruselImages4} />
       <Historia />
       <ContactSection />
-      <Footer/>
+      <Footer />
+
+
     </>
   );
 }

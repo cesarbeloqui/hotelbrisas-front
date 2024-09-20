@@ -1,23 +1,24 @@
-import image2 from "@mastersuites/2.jpeg";
-import image1 from "@mastersuites/1.jpeg";
-import image3 from "@mastersuites/3.jpeg";
-import image4 from "@mastersuites/4.jpeg";
-import image5 from "@mastersuites/5.jpeg";
-import image6 from "@mastersuites/6.jpeg";
-import image7 from "@mastersuites/7.jpeg";
-import image8 from "@bahiasuites/1.jpg";
-import image9 from "@bahiasuites/2.jpg";
-import image10 from "@bahiasuites/3.jpg";
-import image11 from "@bahiasuites/4.jpg";
-import image12 from "@gardesuites/1.jpg";
-import image13 from "@gardesuites/2.jpg";
-import image14 from "@gardesuites/3.jpg";
-import image15 from "@gardesuites/4.jpg";
-import image16 from "@galeria/1.jpg";
-import image17 from "@galeria/2.jpg";
-import image18 from "@galeria/3.jpg";
-import image19 from "@galeria/4.jpg";
-import image20 from "@galeria/5.jpg";
+import image2 from "@mastersuites/mastersuites-2.jpg";
+import image1 from "@mastersuites/mastersuites-1.jpg";
+import image3 from "@mastersuites/mastersuites-3.jpg";
+import image4 from "@mastersuites/mastersuites-4.jpg";
+import image5 from "@mastersuites/mastersuites-5.jpg";
+import image6 from "@mastersuites/mastersuites-6.jpg";
+import image7 from "@mastersuites/mastersuites-7.jpg";
+import image21 from "@mastersuites/mastersuites-8.jpg";
+import image8 from "@bahiasuites/bahiasuites-1.jpg";
+import image9 from "@bahiasuites/bahiasuites-2.jpg";
+import image10 from "@bahiasuites/bahiasuites-3.jpg";
+import image11 from "@bahiasuites/bahiasuites-4.jpg";
+import image12 from "@gardesuites/gardesuites-1.jpg";
+import image13 from "@gardesuites/gardesuites-2.jpg";
+import image14 from "@gardesuites/gardesuites-3.jpg";
+import image15 from "@gardesuites/gardesuites-4.jpg";
+import image16 from "@galeria/galeria-1.jpg";
+import image17 from "@galeria/galeria-2.jpg";
+import image18 from "@galeria/galeria-3.jpg";
+import image19 from "@galeria/galeria-4.jpg";
+import image20 from "@galeria/galeria-5.jpg";
 
 
 export const CarruselImages1 = [
@@ -27,7 +28,8 @@ export const CarruselImages1 = [
   image4,
   image5,
   image6,
-  image7
+  image7,
+  image21
 ];
 export const CarruselImages2 = [
   image8,

@@ -15,12 +15,12 @@ import Autoplay from "embla-carousel-autoplay";
 import LazyImage from "../components/LazyImage/LazyImage";
 
 // Import images
-import img1 from "@servicios/1.jpg";
-import img2 from "@servicios/2.jpg";
-import img3 from "@servicios/3.jpg";
-import img4 from "@servicios/4.jpg";
-import img5 from "@servicios/5.jpg";
-import img6 from "@servicios/6.jpg";
+import img1 from "@servicios/servicios-1.jpg";
+import img2 from "@servicios/servicios-2.jpg";
+import img3 from "@servicios/servicios-3.jpg";
+import img4 from "@servicios/servicios-4.jpg";
+import img5 from "@servicios/servicios-5.jpg";
+import img6 from "@servicios/servicios-6.jpg";
 
 const images = [img1, img2, img3, img4, img5, img6];
 
@@ -63,7 +63,7 @@ function Servicios() {
                                 <CarouselItem
                                     key={index}
                                     className={`w-full`} // Aplicar si es necesario
-                                    style={{ height: window.innerWidth >= 640 ? rightColumnHeight : '40vh' }}
+                                    style={{ height: window.innerWidth >= 640 ? rightColumnHeight : '50vh' }}
                                 >
                                     <Card className="w-full h-full border-none">
                                         <CardContent className="p-0 h-full">
