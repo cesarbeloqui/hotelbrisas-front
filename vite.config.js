@@ -17,6 +17,10 @@ export default defineConfig({
           dest: "",
         },
         {
+          src: "src/assets",  // Copia toda la carpeta assets
+          dest: "assets",      // Carpeta destino dentro de dist/
+        },
+        {
           src: "src/sitemap.xml",
           dest: "",
         },
