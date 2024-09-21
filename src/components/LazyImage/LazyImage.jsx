@@ -54,7 +54,6 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
         .join(', ');
       const srcSetWebp = srcSet.replace(/\.(jpg|png)/g, '.webp');
       const srcWebp = src.replace(/\.(jpg|png)/g, '.webp')
-      console.log(srcWebp);
       setSrcWebp(srcWebp)
       setSrcSetWebp(srcSetWebp);
       setSrcSet(srcSet);

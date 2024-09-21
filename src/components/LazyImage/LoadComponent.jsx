@@ -10,7 +10,6 @@ const LoadComponent = ({  loading, useShow }) => {
 
 
   useEffect(() => {
-    console.log("Loading count:", loadingCount);
 /*     if (previousLoadingCount > 0 && loadingCount === 0) {
       if (hasDetectedFirstZero) {
         setShow(true)

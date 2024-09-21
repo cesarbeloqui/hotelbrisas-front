@@ -14,13 +14,14 @@ import { arrowLeft2, arrowRight2 } from "@/media/media";
 import Autoplay from "embla-carousel-autoplay";
 import LazyImage from "../components/LazyImage/LazyImage";
 
+
 // Import images
-import img1 from "@servicios/servicios-1.webp";
-import img2 from "@servicios/servicios-2.webp";
-import img3 from "@servicios/servicios-3.webp";
-import img4 from "@servicios/servicios-4.webp";
-import img5 from "@servicios/servicios-5.webp";
-import img6 from "@servicios/servicios-6.webp";
+import img1 from "../assets/servicios/servicios-1.webp";
+import img2 from "../assets/servicios/servicios-2.webp";
+import img3 from "../assets/servicios/servicios-3.webp";
+import img4 from "../assets/servicios/servicios-4.webp";
+import img5 from "../assets/servicios/servicios-5.webp";
+import img6 from "../assets/servicios/servicios-6.webp";
 
 const images = [img1, img2, img3, img4, img5, img6];
 
@@ -31,6 +32,7 @@ function Servicios() {
 
     const rightColumnRef = useRef(null);
     const [rightColumnHeight, setRightColumnHeight] = useState('auto');
+    const offsetHeight = rightColumnRef ? rightColumnRef.current : null;
 
     useEffect(() => {
         const updateHeight = () => {
@@ -44,7 +46,7 @@ function Servicios() {
         window.addEventListener('resize', updateHeight);
 
         return () => window.removeEventListener('resize', updateHeight);
-    }, []);
+    }, [offsetHeight]);
     return (
         <div className="w-full mx-auto bg-blanco overflow-hidden z-30">
             <div className="pb-6 flex flex-col md:flex-row">
@@ -63,7 +65,7 @@ function Servicios() {
                                 <CarouselItem
                                     key={index}
                                     className={`w-full`} // Aplicar si es necesario
-                                    style={{ height: window.innerWidth >= 640 ? rightColumnHeight : '50vh' }}
+                                    style={{ height: window.innerWidth >= 640 ? rightColumnHeight : '40vh' }}
                                 >
                                     <Card className="w-full h-full border-none">
                                         <CardContent className="p-0 h-full">
