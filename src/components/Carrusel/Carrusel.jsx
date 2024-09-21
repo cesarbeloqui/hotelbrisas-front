@@ -10,16 +10,16 @@ import useLocalizedContent from "@/hooks/useLocalizedContent";
 import ArrowLeft from "@icons/arrowLeft.svg?react";
 import ArrowRight from "@icons/arrowRight.svg?react";
 import Autoplay from "embla-carousel-autoplay";
-import image1 from "@carrusel/carrusel-1.jpg";
-import image2 from "@carrusel/carrusel-2.jpg";
-import image3 from "@carrusel/carrusel-3.jpg";
-import image4 from "@carrusel/carrusel-4.jpg";
-import image5 from "@carrusel/carrusel-5.jpg";
-import image6 from "@carrusel/carrusel-6.jpg";
-import image7 from "@carrusel/carrusel-7.jpg";
 import LazyImage from "../LazyImage/LazyImage";
+import image1 from "../../assets/carrusel/carrusel-1.webp";
+import image2 from "../../assets/carrusel/carrusel-2.webp";
+import image3 from "../../assets/carrusel/carrusel-3.webp";
+import image4 from "../../assets/carrusel/carrusel-4.webp";
+import image5 from "../../assets/carrusel/carrusel-5.webp";
+import image6 from "../../assets/carrusel/carrusel-6.webp";
+import image7 from "../../assets/carrusel/carrusel-7.webp";
 
-const images = [
+/* const images = [
     image1,
     image2,
     image3,
@@ -27,6 +27,15 @@ const images = [
     image5,
     image6,
     image7
+]; */
+const images = [
+    "../../assets/carrusel/carrusel-1.webp",
+    "../../assets/carrusel/carrusel-2.webp",
+    "../../assets/carrusel/carrusel-3.webp",
+    "../../assets/carrusel/carrusel-4.webp",
+    "../../assets/carrusel/carrusel-5.webp",
+    "../../assets/carrusel/carrusel-6.webp",
+    "../../assets/carrusel/carrusel-7.webp"
 ];
 
 function* pairGenerator(array1, array2) {

@@ -1,55 +1,59 @@
-import image2 from "@mastersuites/mastersuites-2.jpg";
-import image1 from "@mastersuites/mastersuites-1.jpg";
-import image3 from "@mastersuites/mastersuites-3.jpg";
-import image4 from "@mastersuites/mastersuites-4.jpg";
-import image5 from "@mastersuites/mastersuites-5.jpg";
-import image6 from "@mastersuites/mastersuites-6.jpg";
-import image7 from "@mastersuites/mastersuites-7.jpg";
-import image21 from "@mastersuites/mastersuites-8.jpg";
-import image8 from "@bahiasuites/bahiasuites-1.jpg";
-import image9 from "@bahiasuites/bahiasuites-2.jpg";
-import image10 from "@bahiasuites/bahiasuites-3.jpg";
-import image11 from "@bahiasuites/bahiasuites-4.jpg";
-import image12 from "@gardesuites/gardesuites-1.jpg";
-import image13 from "@gardesuites/gardesuites-2.jpg";
-import image14 from "@gardesuites/gardesuites-3.jpg";
-import image15 from "@gardesuites/gardesuites-4.jpg";
-import image16 from "@galeria/galeria-1.jpg";
-import image17 from "@galeria/galeria-2.jpg";
-import image18 from "@galeria/galeria-3.jpg";
-import image19 from "@galeria/galeria-4.jpg";
-import image20 from "@galeria/galeria-5.jpg";
+import image2 from "./assets/mastersuites/mastersuites-2.webp";
+import image1 from "./assets/mastersuites/mastersuites-1.webp";
+import image3 from "./assets/mastersuites/mastersuites-3.webp";
+import image4 from "./assets/mastersuites/mastersuites-4.webp";
+import image5 from "./assets/mastersuites/mastersuites-5.webp";
+import image6 from "./assets/mastersuites/mastersuites-6.webp";
+import image7 from "./assets/mastersuites/mastersuites-7.webp";
+import image21 from "./assets/mastersuites/mastersuites-8.webp";
+import image8 from "./assets/bahiasuites/bahiasuites-1.webp";
+import image9 from "./assets/bahiasuites/bahiasuites-2.webp";
+import image10 from "./assets/bahiasuites/bahiasuites-3.webp";
+import image11 from "./assets/bahiasuites/bahiasuites-4.webp";
+import image12 from "./assets/gardesuites/gardesuites-1.webp";
+import image13 from "./assets/gardesuites/gardesuites-2.webp";
+import image14 from "./assets/gardesuites/gardesuites-3.webp";
+import image15 from "./assets/gardesuites/gardesuites-4.webp";
+import image16 from "./assets/galeria/galeria-1.webp";
+import image17 from "./assets/galeria/galeria-2.webp";
+import image18 from "./assets/galeria/galeria-3.webp";
+import image19 from "./assets/galeria/galeria-4.webp";
+import image20 from "./assets/galeria/galeria-5.webp";
 
 
 export const CarruselImages1 = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image21
+  "./assets/mastersuites/mastersuites-1.webp",
+  "./assets/mastersuites/mastersuites-2.webp",
+  "./assets/mastersuites/mastersuites-3.webp",
+  "./assets/mastersuites/mastersuites-4.webp",
+  "./assets/mastersuites/mastersuites-5.webp",
+  "./assets/mastersuites/mastersuites-6.webp",
+  "./assets/mastersuites/mastersuites-7.webp",
+  "./assets/mastersuites/mastersuites-8.webp"
 ];
+
 export const CarruselImages2 = [
-  image8,
-  image9,
-  image10,
-  image11
+  "./assets/bahiasuites/bahiasuites-1.webp",
+  "./assets/bahiasuites/bahiasuites-2.webp",
+  "./assets/bahiasuites/bahiasuites-3.webp",
+  "./assets/bahiasuites/bahiasuites-4.webp"
 ];
+
 export const CarruselImages3 = [
-  image12,
-  image13,
-  image14,
-  image15
+  "./assets/gardesuites/gardesuites-1.webp",
+  "./assets/gardesuites/gardesuites-2.webp",
+  "./assets/gardesuites/gardesuites-3.webp",
+  "./assets/gardesuites/gardesuites-4.webp"
 ];
+
 export const CarruselImages4 = [
-  image16,
-  image17,
-  image18,
-  image19,
-  image20
+  "./assets/galeria/galeria-1.webp",
+  "./assets/galeria/galeria-2.webp",
+  "./assets/galeria/galeria-3.webp",
+  "./assets/galeria/galeria-4.webp",
+  "./assets/galeria/galeria-5.webp"
 ];
+
 
 
 

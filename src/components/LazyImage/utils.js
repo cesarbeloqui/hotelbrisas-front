@@ -17,7 +17,7 @@ export function removeLastPartAndExtractFileName(filePath) {
 }
 
 // Ejemplo de uso
-/* const filePath = '/src/assets/carrusel/7.jpg';
+/* const filePath = '/src/assets/carrusel/7.webp';
 const result = removeLastPartAndExtractFileName(filePath);
 
 console.log(result.directory); // 'src/assets/carrusel'

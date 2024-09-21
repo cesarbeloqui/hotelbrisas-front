@@ -3,7 +3,7 @@ import TextFormatter from "@/components/TextFormatter/TextFormatter"
 import useLocalizedContent from "@/hooks/useLocalizedContent"
 import { fondoHabitaciones } from "@/media/media"
 import SVG from "@/components/SVG"
-import img from "@historia/historia-1.jpg"
+import img from "@historia/historia-1.webp"
 import LazyImage from "@/components/LazyImage/LazyImage"
 import * as Dialog from '@radix-ui/react-dialog'
 import { cn, truncateFormattedContent } from '@/lib/utils'

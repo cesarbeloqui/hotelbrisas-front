@@ -15,12 +15,12 @@ import Autoplay from "embla-carousel-autoplay";
 import LazyImage from "../components/LazyImage/LazyImage";
 
 // Import images
-import img1 from "@servicios/servicios-1.jpg";
-import img2 from "@servicios/servicios-2.jpg";
-import img3 from "@servicios/servicios-3.jpg";
-import img4 from "@servicios/servicios-4.jpg";
-import img5 from "@servicios/servicios-5.jpg";
-import img6 from "@servicios/servicios-6.jpg";
+import img1 from "@servicios/servicios-1.webp";
+import img2 from "@servicios/servicios-2.webp";
+import img3 from "@servicios/servicios-3.webp";
+import img4 from "@servicios/servicios-4.webp";
+import img5 from "@servicios/servicios-5.webp";
+import img6 from "@servicios/servicios-6.webp";
 
 const images = [img1, img2, img3, img4, img5, img6];
 
