@@ -32,8 +32,7 @@
     "redux-thunk": "^3.1.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-    "vite-plugin-static-copy": "^1.0.6",
-    "webp-converter": "^2.3.3"
+    "vite-plugin-static-copy": "^1.0.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

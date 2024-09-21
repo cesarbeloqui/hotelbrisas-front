@@ -4,7 +4,9 @@ import EmailIcon from "@icons/EmailIcon.svg?react"
 import PhoneIcon from "@icons/PhoneIcon.svg?react"
 import PositionIcon from "@icons/PositionIcon.svg?react"
 import WpIconAzul from "@icons/WpIconAzul.svg?react"
-import iconUbic from "@assets/iconLocalizacionChico.png"
+import iconFB from "../assets/facebook.webp"
+import iconIG from "../assets/instagram.webp"
+import iconUbic from "@assets/iconLocalizacionChico.webp"
 import MapComponent from './Mapa/Mapa'
 import useLocalizedContent from '@/hooks/useLocalizedContent'
 
@@ -41,9 +43,23 @@ export default function Component() {
                                 <span className="ml-2">WhatsApp: +{texts.whatsapp}</span>
                             </a>
                         </p>
+
                     </div>
 
                     <div className='sm:absolute sm:bottom-0 sm:text-[1.3rem] space-y-7'>
+
+                        <div className='flex flex-row sm:ml-12 ml-10'>
+                            <a href={`https://www.facebook.com/hotelbrisasdelapedrera`} className="flex items-center sm:mb-2 mb-4">
+                                <img src={iconFB} className={`w-8 inline-block mr-2`} />
+
+                            </a>
+                            <a href={`https://www.instagram.com/brisasdelapedrera/`} className="flex items-center sm:mb-2 mb-4">
+                                <img src={iconIG} className={`w-8 inline-block mr-2`} />
+
+                            </a>
+
+                        </div>
+
                         <a href="https://maps.app.goo.gl/S8obcYR8EDzhWeUR6" target="_blank" rel="noopener noreferrer">
                             <div className='flex'>
                                 <PositionIcon className="w-16 h-auto mr-2" />
