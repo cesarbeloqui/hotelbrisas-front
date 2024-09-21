@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 import svgr from 'vite-plugin-svgr';
+import viteImagemin from 'vite-plugin-imagemin';
 
 
 // https://vitejs.dev/config/
@@ -27,6 +28,20 @@ export default defineConfig({
         },
       ],
     }),
+    viteImagemin({
+      // Optimización de JPEG
+      mozjpeg: {
+        quality: 75,
+      },
+      // Optimización de PNG
+      optipng: {
+        optimizationLevel: 7,
+      },
+      // Conversión a WebP
+      webp: {
+        quality: 75,
+      },
+    }),
   ],
   resolve: {
     alias: {
@@ -49,7 +64,6 @@ export default defineConfig({
     assetsDir: "assets",
     rollupOptions: {
       output: {
-        manualChunks: undefined,
         assetFileNames: 'assets/[name].[ext]'
       },
     },

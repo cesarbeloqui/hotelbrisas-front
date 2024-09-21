@@ -4,7 +4,14 @@ import { useDispatch } from 'react-redux';
 import { startLoading, stopLoading } from './redux/loadingSlice';
 import imagesData from '../../rize.json';
 import { removeLastPartAndExtractFileName } from './utils';
+
+
+
+
 const LazyImage = ({ src, alt, className, onLoad }) => {
+  const [isSupported, setisSupported] = useState(true);
+  const [srcSetWebp, setSrcSetWebp] = useState('');
+  const [srcWebp, setSrcWebp] = useState('');
   const { directory, fileName, fileWithExtension } = removeLastPartAndExtractFileName(src);
   const dispatch = useDispatch();
   const [imageSizes, setImageSizes] = useState([]);
@@ -12,42 +19,44 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
 
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
+    const testWebP = () => {
+      const canvas = document.createElement('canvas');
+      canvas.width = 1;
+      canvas.height = 1;
+
+      const isSupported = canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+      return isSupported;
+    };
+    setisSupported(testWebP());
+  }, []);
+  useEffect(() => {
     // Usamos directamente el objeto importado
     if (imagesData && imagesData[fileWithExtension]) {
       setImageSizes(imagesData[fileWithExtension].dimensions);
     }
   }, []);
   useEffect(() => {
-    /* 
-    imageSizes = [
-    "295×197",
-    "1060×706",
-    "1460×973",
-    "1780×1186",
-    "2048×1364"
-  ]
-    */
     if (imageSizes.length > 0) {
       const srcSet = imageSizes
         .map((size, index) => {
           // extraer extension del archivo:
           const extension = fileWithExtension.split('.')[1];
           const [width, height] = size.split('×').map(Number);
-          /*           console.log('directory', directory);
-                    console.log('fileName', fileName);
-                    console.log('width', width);
-                    console.log('extension', extension); */
-          const fileNameWithoutNumber = fileName.split("-")[0]
-          /* console.log('fileNameWithoutNumber', fileNameWithoutNumber); */
+
+          const fileNameWithoutNumber = fileName.split('-')[0];
 
           if (directory.includes(fileNameWithoutNumber)) {
             return `${directory}/${fileName}/${width}.${extension} ${width}w`;
           } else {
-            return `${directory}/${fileNameWithoutNumber}/${fileName}/${width}.${extension} ${width}w`
+            return `${directory}/${fileNameWithoutNumber}/${fileName}/${width}.${extension} ${width}w`;
           }
-          //https://hotelbrisas-front.vercel.app/assets/bahiasuites/bahiasuites-1/295.jpg
         })
         .join(', ');
+      const srcSetWebp = srcSet.replace(/\.(jpg|png)/g, '.webp');
+      const srcWebp = src.replace(/\.(jpg|png)/g, '.webp')
+      console.log(srcWebp);
+      setSrcWebp(srcWebp)
+      setSrcSetWebp(srcSetWebp);
       setSrcSet(srcSet);
     }
   }, [imageSizes]);
@@ -72,11 +81,12 @@ const LazyImage = ({ src, alt, className, onLoad }) => {
       {/* Muestra el componente de carga mientras la imagen se carga */}
       {loaded && srcSet !== '' && (
         <img
-          src={src}
+          src={isSupported ? srcWebp : src}
           alt={alt}
           className={className}
-          srcSet={srcSet}
+          srcSet={isSupported ? srcSetWebp : srcSet}
           sizes={imagesData[fileWithExtension]?.sizes}
+
         />
       )}
     </>
