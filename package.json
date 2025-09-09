@@ -52,5 +52,6 @@
     "vite": "^5.4.1",
     "vite-plugin-imagemin": "^0.6.1",
     "vite-plugin-svgr": "^4.2.0"
-  }
+  },
+  "packageManager": "pnpm@8.14.0+sha1.bb42032ff80dba5f9245bc1b03470d2fa0b7fb2f"
 }

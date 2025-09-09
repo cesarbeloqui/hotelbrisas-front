@@ -102,7 +102,7 @@ export default {
     },
     servicios: {
       title: "Nuestros Servicios",
-      subtitle: "Brisas es un oasis al lado del mar: ubicado a metros de la playa y de la calle principal. Cuenta con piscina y jardines interiores protegidos de los vientos rochenses.",
+      subtitle: "Brisas es un oasis al lado del mar: ubicado a metros de la playa y de la calle principal. Cuenta con piscina climatizada, zona de playa con quinchos y jardines interiores protegidos de los vientos rochenses.",
       items: [
         "Copa de Bienvenida.",
         "Desayuno buffet.",
@@ -113,6 +113,8 @@ export default {
         "Batas.",
         "Living con estufa.",
         "Patio / Deck en zona de piscina con reposeras y mesas.",
+        "Piscina climatizada",
+        "Quinchos para uso exclusivo de los huéspedes",
         "En temporada para la playa: bolsa, toallas, sombreros y sillas de playa.",
       ]
     },
@@ -190,7 +192,7 @@ export default {
       title: "Dejanos tus consultas",
       email: "reservas@hotelbrisas.uy",
       phone: { number: "+59844792265", text: "Tel: " },
-      whatsapp: "5989395579",
+      whatsapp: "59893955795",
       address: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguay.",
       beachDistance: "A 100 M DE LA PLAYA",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
@@ -253,7 +255,7 @@ export default {
     },
     servicios: {
       title: "Our Services",
-      subtitle: "Brisas is an oasis by the sea: located just meters from the beach and the main street. It features a pool and sheltered inner gardens protected from the Rocha winds.",
+      subtitle: "Brisas is an oasis by the sea: located just meters from the beach and the main street. It features a heated pool, a beach area with pergolas, and interior gardens sheltered from the Rocha winds.",
       items: [
         "Welcome drink.",
         "Buffet breakfast.",
@@ -264,6 +266,8 @@ export default {
         "Bathrobes.",
         "Living room with stove.",
         "Patio / Deck in the pool area with loungers and tables.",
+        "Heated pool",
+        "Pergolas for the exclusive use of guests",
         "Seasonal beach items: bag, towels, hats, and beach chairs."
       ]
 
@@ -353,7 +357,7 @@ export default {
       title: "Send us your inquiries",
       email: "reservas@hotelbrisas.uy",
       phone: { number: "+59844792265", text: "Phone: " },
-      whatsapp: "5989395579",
+      whatsapp: "59893955795",
       address: "Santa Teresa s/n Corner Laguna Merín, 27004 La Pedrera, Uruguay.",
       beachDistance: "100 M FROM THE BEACH",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],
@@ -416,7 +420,7 @@ export default {
     },
     servicios: {
       title: "Nossos Serviços",
-      subtitle: "Brisas é um oásis à beira-mar: localizado a poucos metros da praia e da rua principal. Conta com piscina e jardins internos protegidos dos ventos de Rocha.",
+      subtitle: "Brisas é um oásis à beira-mar: localizado a poucos metros da praia e da rua principal. Conta com piscina aquecida, área de praia com quiosques e jardins internos protegidos dos ventos de Rocha.",
       items: [
         "Taça de Boas-Vindas.",
         "Café da manhã buffet.",
@@ -427,6 +431,8 @@ export default {
         "Roupões.",
         "Sala de estar com aquecedor.",
         "Pátio / Deck na área da piscina com espreguiçadeiras e mesas.",
+        "Piscina aquecida",
+        "Quiosques de uso exclusivo dos hóspedes",
         "Em temporada para a praia: bolsa, toalhas, chapéus e cadeiras de praia."
       ]
     },
@@ -515,7 +521,7 @@ export default {
       title: "Envie-nos suas consultas",
       email: "reservas@hotelbrisas.uy",
       phone: { number: "+59844792265", text: "Tel: " },
-      whatsapp: "5989395579",
+      whatsapp: "59893955795",
       address: "Santa Teresa s/n Esquina Laguna Merín, 27004 La Pedrera, Uruguai.",
       beachDistance: "A 100 M DA PRAIA",
       caboPolonio: [{ "font-bold text-celeste": "Cabo Polonio: " }, "39 km."],

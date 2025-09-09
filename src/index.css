@@ -5,55 +5,55 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #ubicacion {
-    scroll-margin-top: 8vh;
+  scroll-margin-top: 8vh;
 }
 
 @media (min-width: 640px) {
-    #ubicacion {
-        scroll-margin-top: 12vh;
-    }
+  #ubicacion {
+    scroll-margin-top: 12vh;
+  }
 }
 
 #historia {
-    scroll-margin-top: 0vh;
+  scroll-margin-top: 0vh;
 }
 
 @media (min-width: 640px) {
-    #historia {
-        scroll-margin-top: 10vh;
-    }
+  #historia {
+    scroll-margin-top: 10vh;
+  }
 }
 
 .fade-in-out {
-    animation: fadeInOut 2s ease-in-out infinite;
-    /* Animación infinita con una duración de 2 segundos */
+  animation: fadeInOut 2s ease-in-out infinite;
+  /* Animación infinita con una duración de 2 segundos */
 }
 
 @keyframes fadeInOut {
-    0% {
-        opacity: 0.5;
-        /* Comienza completamente transparente */
-    }
+  0% {
+    opacity: 0.5;
+    /* Comienza completamente transparente */
+  }
 
-    50% {
-        opacity: 1;
-        /* Totalmente visible en la mitad de la animación */
-    }
+  50% {
+    opacity: 1;
+    /* Totalmente visible en la mitad de la animación */
+  }
 
-    100% {
-        opacity: 0.5;
-        /* Termina nuevamente transparente */
-    }
+  100% {
+    opacity: 0.5;
+    /* Termina nuevamente transparente */
+  }
 }

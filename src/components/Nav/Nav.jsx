@@ -81,8 +81,8 @@ const EnlaceNav = ({ href, children, isActive, onClick }) => {
 export default function NavegacionHotel() {
   const localizedContent = useLocalizedContent();
   const { sections } = localizedContent;
-  const [menuAbierto, setMenuAbierto] = useState(false);
   const [seccionActiva, setSeccionActiva] = useState("");
+  const [menuAbierto, setMenuAbierto] = useState(false);
 
   const toggleMenu = () => {
     setMenuAbierto(!menuAbierto);
@@ -163,15 +163,15 @@ export default function NavegacionHotel() {
             </div>
             <div className="mt-4 flex flex-col space-y-2">
               <a href="https://hotels.cloudbeds.com/reservation/qliQoE" target="_blank" rel="noopener noreferrer">
-              <button className="bg-celeste text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition-colors">
-                {localizedContent.reservas}
-              </button>
-            </a>
-            <LanguageSelector />
-          </div>
+                <button className="bg-celeste text-white border border-white px-4 py-2 rounded hover:bg-white hover:text-blue-600 transition-colors">
+                  {localizedContent.reservas}
+                </button>
+              </a>
+              <LanguageSelector />
+            </div>
           </div>
         )}
-    </div>
+      </div>
     </nav >
   );
 }

@@ -28,6 +28,7 @@ function App() {
     <>
       <Whatsapp />
       <Nav />
+
       <Carrusel />
       <LocationSection />
 
@@ -46,6 +47,7 @@ function App() {
       <Historia />
       <ContactSection />
       <Footer />
+     
 
 
     </>
